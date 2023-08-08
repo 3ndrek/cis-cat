@@ -1,0 +1,43 @@
+
+--------------------------------------------------------------------------------------
+   ,o88888o.    8888    d888888o.          ,o88888o.           8.    8888888888888888 
+  8888    `88.  8888  .`8888:' `88.       8888    `88.        .88.         8888       
+,88888      `8. 8888  8.`8888.   Y8     ,88888      `8.      .8888.        8888       
+888888          8888  `8.`8888.         888888              .`88888.       8888       
+888888          8888   `8.`8888.   888  888888             .8.`88888.      8888       
+888888          8888    `8.`8888.  888  888888            .8`8.`88888.     8888       
+888888          8888     `8.`8888.      888888           .8' `8.`88888.    8888       
+`88888      .8' 8888 8b   `8.`8888.     `88888      .8' .8'   `8.`88888.   8888       
+  8888    ,88'  8888 `8b.  ;8.`8888       8888    ,88' .888888888.`88888.  8888       
+   `888888P'    8888  `Y8888P ,88P'        `888888P'  .8'       `8.`88888. 8888       
+--------------------------------------------------------------------------------------
+         Welcome to CIS-CAT Pro Assessor; built on 07/20/2023 15:54 PM
+--------------------------------------------------------------------------------------
+  This is the Center for Internet Security Configuration Assessment Tool, v4.32.0
+          At any time during the selection process, enter 'q!' to exit.
+--------------------------------------------------------------------------------------
+		
+Verifying application
+
+Configured report output directory to 'C:\Users\Usuario\Desktop\seguridad_infra\CIS-CAT Lite Assessor v4.32.0\Assessor\reports'
+Parsing configuration file for sessions and assessments
+- Found session configuration: prueba_labsis
+- Configuring reporting options
+- Configuring assessments
+Total number of Assessments to be executed: 1.
+Executing configuration file-based assessment(s).
+Obtaining session connection --> Administrador@200.69.137.167:22651
+An error occurred creating the session for Administrador@200.69.137.167:22651.  Ensure all session configuration information is correct.
+An error occurred creating the session for Administrador@200.69.137.167:22651.  Ensure all session configuration information is correct.
+Could not obtain connection to Session: Administrador@200.69.137.167; Skipping.
+Started Assessment 1/1
+Assessment target number 1
+Target was not assessed
+Finished Assessment 1/1
+
+--------------------------------------------------------------------------------
+ One or more Assessments could not successfully complete:
+- Assessment 1 Exit Value: 121
+--------------------------------------------------------------------------------
+
+Exiting; Exit Code: 1

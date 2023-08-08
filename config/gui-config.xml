@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://cisecurity.org/ccpa/config">
+    <sessions test="false">
+        <session id="prueba_labsis">
+            <type>windows</type>
+            <host>200.69.137.167</host>
+            <port>22651</port>
+            <user>Administrador</user>
+            <credentials>Operador123</credentials>
+            <tmp_path>C:\Users\Usuario\Desktop\Trabajo Seguridad</tmp_path>
+        </session>
+    </sessions>
+    <assessments gui="true" quiet="false">
+        <benchmark profile="Implementation Group 1 for Windows Server (Full) - Automated Checks and Survey Questions" session-ref="prueba_labsis" xccdf="benchmarks\CIS_Controls_Assessment_Module_Windows_Server_v1.0.0-xccdf.xml">
+            <interactive_values>
+                <value id="xccdf_org.cisecurity_value_10.2_var">90</value>
+                <value id="xccdf_org.cisecurity_value_15.10_var">y</value>
+                <value id="xccdf_org.cisecurity_value_19.3_var">y</value>
+                <value id="xccdf_org.cisecurity_value_4.2_var">14</value>
+                <value id="xccdf_org.cisecurity_value_2.1_var">y</value>
+                <value id="xccdf_org.cisecurity_value_16.11_var">900</value>
+                <value id="xccdf_org.cisecurity_value_17.7_var">y</value>
+                <value id="xccdf_org.cisecurity_value_13.1_var">y</value>
+                <value id="xccdf_org.cisecurity_value_2.6_var">y</value>
+                <value id="xccdf_org.cisecurity_value_14.6_var">y</value>
+                <value id="xccdf_org.cisecurity_value_19.5_var">y</value>
+                <value id="xccdf_org.cisecurity_value_17.9_var">y</value>
+                <value id="xccdf_org.cisecurity_value_16.9_var">90</value>
+                <value id="xccdf_org.cisecurity_value_5.1_var">y</value>
+                <value id="xccdf_org.cisecurity_value_7.7_var">y</value>
+                <value id="xccdf_org.cisecurity_value_3.5_var">y</value>
+                <value id="xccdf_org.cisecurity_value_17.6_var">y</value>
+                <value id="xccdf_org.cisecurity_value_1.4_var">y</value>
+                <value id="xccdf_org.cisecurity_value_12.4_var">y</value>
+                <value id="xccdf_org.cisecurity_value_11.4_var">y</value>
+                <value id="xccdf_org.cisecurity_value_17.3_var">y</value>
+                <value id="xccdf_org.cisecurity_value_4.3_var">y</value>
+                <value id="xccdf_org.cisecurity_value_2.2_var">y</value>
+                <value id="xccdf_org.cisecurity_value_12.1_var">y</value>
+                <value id="xccdf_org.cisecurity_value_17.8_var">y</value>
+                <value id="xccdf_org.cisecurity_value_7.1_var">y</value>
+                <value id="xccdf_org.cisecurity_value_1.6_var">y</value>
+                <value id="xccdf_org.cisecurity_value_13.2_var">y</value>
+                <value id="xccdf_org.cisecurity_value_16.8_var">y</value>
+                <value id="xccdf_org.cisecurity_value_19.1_var">y</value>
+                <value id="xccdf_org.cisecurity_value_10.5_var">y</value>
+                <value id="xccdf_org.cisecurity_value_19.6_var">y</value>
+                <value id="xccdf_org.cisecurity_value_17.5_var">y</value>
+            </interactive_values>
+        </benchmark>
+    </assessments>
+    <reports csv="false" html="true" no-arf="true" npr="false" txt="false">
+        <reports_dir>C:\Users\Usuario\Desktop\seguridad_infra\CIS-CAT Lite Assessor v4.32.0\Assessor\reports</reports_dir>
+    </reports>
+</configuration>

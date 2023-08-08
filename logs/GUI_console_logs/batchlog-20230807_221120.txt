@@ -1,0 +1,1658 @@
+
+--------------------------------------------------------------------------------------
+   ,o88888o.    8888    d888888o.          ,o88888o.           8.    8888888888888888 
+  8888    `88.  8888  .`8888:' `88.       8888    `88.        .88.         8888       
+,88888      `8. 8888  8.`8888.   Y8     ,88888      `8.      .8888.        8888       
+888888          8888  `8.`8888.         888888              .`88888.       8888       
+888888          8888   `8.`8888.   888  888888             .8.`88888.      8888       
+888888          8888    `8.`8888.  888  888888            .8`8.`88888.     8888       
+888888          8888     `8.`8888.      888888           .8' `8.`88888.    8888       
+`88888      .8' 8888 8b   `8.`8888.     `88888      .8' .8'   `8.`88888.   8888       
+  8888    ,88'  8888 `8b.  ;8.`8888       8888    ,88' .888888888.`88888.  8888       
+   `888888P'    8888  `Y8888P ,88P'        `888888P'  .8'       `8.`88888. 8888       
+--------------------------------------------------------------------------------------
+         Welcome to CIS-CAT Pro Assessor; built on 07/20/2023 15:54 PM
+--------------------------------------------------------------------------------------
+  This is the Center for Internet Security Configuration Assessment Tool, v4.32.0
+          At any time during the selection process, enter 'q!' to exit.
+--------------------------------------------------------------------------------------
+		
+Verifying application
+
+Configured report output directory to 'C:\Users\Usuario\Desktop'
+Parsing configuration file for sessions and assessments
+- Found session configuration: basic-detected-GENDREK
+- Found session configuration: basic-GENDREK
+- Configuring reporting options
+- Configuring assessments
+Total number of Assessments to be executed: 2.
+Executing configuration file-based assessment(s).
+Obtaining session connection --> Local
+Connection established.  
+Started Assessment 1/2
+Assessment target number 1
+Assessment Type is: LOCAL
+Assessment Target System is: basic-detected-GENDREK
+Assessment File CIS_Microsoft_Windows_10_Enterprise_Benchmark_v2.0.0-xccdf.xml has a valid Signature.
+Selected Checklist 'CIS Microsoft Windows 10 Enterprise Benchmark'
+Selected Profile 'Level 1 (L1) - Corporate/Enterprise Environment (general use)'
+Starting Assessment
+----------------------- ASSESSMENT TARGET -----------------------------------
+       Hostname: GEndrek
+        OS Name: Microsoft Windows 10 Pro
+     OS Version: 10.0.19045
+OS Architecture: 64 bits
+
+Interfaces:
+  Name: Realtek PCIe GbE Family Controller
+    IP: 192.168.100.4
+   MAC: 70:85:C2:C2:BA:15
+  Name: VirtualBox Host-Only Ethernet Adapter
+    IP: 192.168.56.1
+   MAC: 0A:00:27:00:00:07
+-----------------------------------------------------------------------------
+
+Starting Assessment - Date & Time: 08-07-2023 22:11:55
+-----------------------------------------------------------------------------
+ Checklist Title: CIS Microsoft Windows 10 Enterprise Benchmark
+    Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_2.0.0_CIS_Microsoft_Windows_10_Enterprise_Benchmark
+   Profile Title: Level 1 (L1) - Corporate/Enterprise Environment (general use)
+      Profile ID: xccdf_org.cisecurity.benchmarks_profile_Level_1_L1_-_CorporateEnterprise_Environment_general_use
+
+Assessing Platform Applicability
+- Resolving Values.................................................................................. <1 second: Done
+- Collecting 0 System Characteristics
+- Evaluating Definitions
+
+
+- Will collect 0 SCE Components
+
+Starting assessment of OVAL Definitions:
+- Resolving Values.................................................................................. 6 seconds: Done
+
+- Collecting 417 System Characteristics
+-- [obj:3529809] Ensure 'Password Hist Len' is 'Greater Than Or Equal' to '24'...................... 13 seconds: Collected
+-- [obj:3529810] Ensure 'Max Passwd Age' is 'Less Than Or Equal' to '31536000'...................... <1 second: Collected
+-- [obj:3529811] Ensure 'Max Passwd Age' is 'Greater Than' to '0'................................... <1 second: Collected
+-- [obj:3529812] Ensure 'Min Passwd Age' is 'Greater Than Or Equal' to '86400'...................... <1 second: Collected
+-- [obj:3529813] Ensure 'Min Passwd Len' is 'Greater Than Or Equal' to '14'......................... <1 second: Collected
+-- [obj:3529814] Ensure Password Policy Setting  equals 1 (boolean)................................. <1 second: Collected
+-- [obj:3529815] Ensure 'RelaxMinimumPasswordLengthLimits' is 'Equals' to '1'....................... <1 second: Collected
+-- [obj:3529816] Ensure 'Reversible Encryption' is 'Equals' to '0'.................................. <1 second: Collected
+-- [obj:3529818] Ensure 'Account lockout duration' is set to '15 or more minute(s)'................. <1 second: Collected
+-- [obj:3529820] Ensure 'Account lockout threshold' is set to '5 or fewer invalid logon attempt(s)'. <1 second: Collected
+-- [obj:3529822] Ensure 'Account lockout threshold' is set to 'Not 0'............................... <1 second: Collected
+-- [obj:3529824] Ensure 'Reset account lockout counter after' is set to '15 or more minute(s)'...... <1 second: Collected
+-- [obj:3529817] Ensure 'setrustedcredmanaccessnameright' is set to 'No One'........................ <1 second: Collected
+-- [obj:3529819] Ensure 'senetworklogonright' is set to 'Administrators, Remote Desktop Users'...... <1 second: Collected
+-- [obj:3529821] Ensure 'setcbprivilege' is set to 'No one'......................................... <1 second: Collected
+-- [obj:3529823] Ensure 'seincreasequotaprivilege' ...dministrators, LOCAL SERVICE, NETWORK SERVICE' <1 second: Collected
+-- [obj:3529825] Ensure 'seinteractivelogonright' is set to 'Administrators, Users'................. <1 second: Collected
+-- [obj:3529826] Ensure 'seremoteinteractivelogonri... set to 'Administrators, Remote Desktop Users' <1 second: Collected
+-- [obj:3529827] Ensure 'sebackupprivilege' is set to ' S-1-5-32-544'............................... <1 second: Collected
+-- [obj:3529829] Ensure 'sesystemtimeprivilege' is set to 'Administrators, LOCAL SERVICE'........... <1 second: Collected
+-- [obj:3529830] Ensure 'setimezoneprivilege' is set to 'Administrators, LOCAL SERVICE, Users'...... <1 second: Collected
+-- [obj:3529832] Ensure 'secreatepagefileprivilege' is set to 'Administrators'...................... <1 second: Collected
+-- [obj:3529833] Ensure 'secreatetokenprivilege' is set to 'No One'................................. <1 second: Collected
+-- [obj:3529835] Ensure 'secreateglobalprivilege' i...tors, LOCAL SERVICE, NETWORK SERVICE, SERVICE' <1 second: Collected
+-- [obj:3529836] Ensure 'secreatepermanentprivilege' is set to 'No One'............................. <1 second: Collected
+-- [obj:3529838] Ensure 'secreatesymboliclinkprivil...strators, NT VIRTUAL MACHINE\Virtual Machines' <1 second: Collected
+-- [obj:3529840] Ensure 'sedebugprivilege' is set to 'Administrators'............................... <1 second: Collected
+-- [obj:3529841] Ensure 'Deny access to this comput...he network' to include 'Guests, Local account' <1 second: Collected
+-- [obj:3529843] Ensure 'sedenybatchLogonright' to include 'Guests'................................. <1 second: Collected
+-- [obj:3529844] Ensure 'SE_DENY_SERVICE_LOGON_NAME' to include 'Guests'............................ <1 second: Collected
+-- [obj:3529846] Ensure 'sedenyinteractivelogonright' to include 'Guests'........................... <1 second: Collected
+-- [obj:3529847] Ensure 'sedenyremoteInteractivelogonright' to include 'Guests, Local account'...... <1 second: Collected
+-- [obj:3529849] Ensure 'seenabledelegationprivilege' is set to 'No One'............................ <1 second: Collected
+-- [obj:3529851] Ensure 'seremoteshutdownprivilege' is set to 'Administrators'...................... <1 second: Collected
+-- [obj:3529852] Ensure 'seauditprivilege' is set to 'LOCAL SERVICE, NETWORK SERVICE'............... <1 second: Collected
+-- [obj:3529854] Ensure 'seimpersonateprivilege' is...tors, LOCAL SERVICE, NETWORK SERVICE, SERVICE' <1 second: Collected
+-- [obj:3529857] Ensure 'seincreasebaseprioritypriv...strators, Window Manager\Window Manager Group' <1 second: Collected
+-- [obj:3529859] Ensure 'seloaddriverprivilege' is set to 'Administrators'.......................... <1 second: Collected
+-- [obj:3529861] Ensure 'selockmemoryprivilege' is set to 'No One'.................................. <1 second: Collected
+-- [obj:3529867] Ensure 'sesecurityprivilege' is set to 'Administrators'............................ <1 second: Collected
+-- [obj:3529869] Ensure 'serelabelprivilege' is set to 'No One'..................................... <1 second: Collected
+-- [obj:3529870] Ensure 'sesystemenvironmentprivilege' is set to 'Administrators'................... <1 second: Collected
+-- [obj:3529872] Ensure 'semanagevolumeprivilege' is set to 'Administrators'........................ <1 second: Collected
+-- [obj:3529873] Ensure 'seprofilesingleprocessprivilege' is set to 'Administrators'................ <1 second: Collected
+-- [obj:3529875] Ensure 'sesystemprofileprivilege' ...to 'Administrators, NT SERVICE\WdiServiceHost' <1 second: Collected
+-- [obj:3529877] Ensure 'seassignprimarytokenprivilege' is set to 'LOCAL SERVICE, NETWORK SERVICE'.. <1 second: Collected
+-- [obj:3529878] Ensure 'serestoreprivilege' is set to 'Administrators'............................. <1 second: Collected
+-- [obj:3529881] Ensure 'seshutdownprivilege' is set to 'Users, Administrators'..................... <1 second: Collected
+-- [obj:3529884] Ensure 'setakeownershipprivilege' is set to 'Administrators'....................... <1 second: Collected
+-- [obj:3529886] Ensure 'NoConnectedUser' is 'Windows: Registry Value' to '3'....................... <1 second: Collected
+-- [obj:3529891] Ensure '^S\-1\-5\-21\-\d+\-\d+\-\d+\-501$' is 'Equals' to '0'...................... <1 second: Collected
+-- [obj:3529892] Ensure 'LimitBlankPasswordUse' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3529895] Ensure '^S\-1\-5\-21\-\d+\-\d+\-\d...s 'case insensitive not equal' 'Administrator' <1 second: Collected
+-- [obj:3529898] Ensure 'Guest' is 'Null Test' to ''................................................ <1 second: Collected
+-- [obj:3529901] Ensure 'SCENoApplyLegacyAuditPolicy' is 'Windows: Registry Value' to '1'........... <1 second: Collected
+-- [obj:3529905] Ensure 'CrashOnAuditFail' is 'Windows: Registry Value' to '0'...................... <1 second: Collected
+-- [obj:3529908] Ensure 'AllocateDASD' is 'Windows: Registry Value' to '2'.......................... <1 second: Collected
+-- [obj:3529914] Ensure 'RequireSignOrSeal' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3529917] Ensure 'SealSecureChannel' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3529920] Ensure 'SignSecureChannel' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3529923] Ensure 'DisablePasswordChange' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3529927] Ensure 'MaximumPasswordAge' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3529929] Ensure 'MaximumPasswordAge' is 'Windows: Registry Value' to '30'................... <1 second: Collected
+-- [obj:3529932] Ensure 'RequireStrongKey' is 'Windows: Registry Value' to '1'...................... <1 second: Collected
+-- [obj:3529937] Ensure 'DisableCAD' is 'Windows: Registry Value' to '0'............................ <1 second: Collected
+-- [obj:3529943] Ensure 'DontDisplayLastUserName' is 'Windows: Registry Value' to '1'............... <1 second: Collected
+-- [obj:3529957] Ensure 'InactivityTimeoutSecs' is 'Windows: Registry Value' to '900'............... <1 second: Collected
+-- [obj:3529961] Ensure 'InactivityTimeoutSecs' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3529968] Ensure 'LegalNoticeText' is 'Windows: Registry Value' to '.+'...................... <1 second: Collected
+-- [obj:3529974] Ensure 'LegalNoticeCaption' is set to '.+'......................................... <1 second: Collected
+-- [obj:3529987] Ensure 'PasswordExpiryWarning' is 'Windows: Registry Value' to '14'................ <1 second: Collected
+-- [obj:3529993] Ensure 'passwordexpirywarning' is 'Windows: Registry Value' to '5'................. <1 second: Collected
+-- [obj:3529999] Ensure 'ScRemoveOption' is 'Windows: Registry Value' to '^(1|2|3)$'................ <1 second: Collected
+-- [obj:3530005] Ensure 'RequireSecuritySignature' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530011] Ensure 'EnableSecuritySignature' is 'Windows: Registry Value' to '1'............... <1 second: Collected
+-- [obj:3530015] Ensure 'EnablePlainTextPassword' is 'Windows: Registry Value' to '0'............... <1 second: Collected
+-- [obj:3530022] Ensure 'AutoDisconnect' is 'Windows: Registry Value' to less than or equal to '15'. <1 second: Collected
+-- [obj:3530028] Ensure 'RequireSecuritySignature' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530034] Ensure 'EnableSecuritySignature' is 'Windows: Registry Value' to '1'............... <1 second: Collected
+-- [obj:3530039] Ensure 'enableforcedlogoff' is 'Windows: Registry Value' to '1'.................... <1 second: Collected
+-- [obj:3530045] Ensure 'SMBServerNameHardeningLevel' is 'Windows: Registry Value' to '1'........... <1 second: Collected
+-- [obj:3530050] Ensure 'LSAAnonymousNameLookup' is 'Equals' to 'False'............................. 10 seconds: Collected
+-- [obj:3530054] Ensure 'RestrictAnonymousSAM' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3530060] Ensure 'RestrictAnonymous' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3530067] Ensure 'DisableDomainCreds' is 'Windows: Registry Value' to '1'.................... <1 second: Collected
+-- [obj:3530070] Ensure 'EveryoneIncludesAnonymous' is 'Windows: Registry Value' to '0'............. <1 second: Collected
+-- [obj:3530074] Ensure 'NullSessionPipes' is 'Windows: Registry Value' to ''....................... <1 second: Collected
+-- [obj:3530076] Ensure 'Machine' is 'Windows: Regi...,Software\Microsoft\Windows NT\CurrentVersion' <1 second: Collected
+-- [obj:3530080] Ensure 'Machine' is 'Windows: Regi...Version\Print,Software\Microsoft\Windows NT\Cu <1 second: Collected
+-- [obj:3530082] Ensure 'RestrictNullSessAccess' is 'Windows: Registry Value' to '1'................ <1 second: Collected
+-- [obj:3530086] Ensure 'restrictremotesam' is 'Windows: Registry Value' to 'O:BAG:BAD:(A;;RC;;;BA)' <1 second: Collected
+-- [obj:3530090] Ensure 'NullSessionShares' is 'Existence Test' to 'none_exist'..................... <1 second: Collected
+-- [obj:3530088] Ensure 'NullSessionShares' is 'Windows: Registry Value' to ''...................... <1 second: Collected
+-- [obj:3530091] Ensure 'ForceGuest' is 'Windows: Registry Value' to '0'............................ <1 second: Collected
+-- [obj:3530093] Ensure 'UseMachineId' is 'Windows: Registry Value' to '1'.......................... <1 second: Collected
+-- [obj:3530095] Ensure 'AllowNullSessionFallback' is 'Windows: Registry Value' to '0'.............. <1 second: Collected
+-- [obj:3530097] Ensure 'AllowOnlineID' is 'Windows: Registry Value' to '0'......................... <1 second: Collected
+-- [obj:3530099] Ensure 'SupportedEncryptionTypes' is 'Windows: Registry Value' to '2147483640'..... <1 second: Collected
+-- [obj:3530101] Ensure 'NoLMHash' is 'Windows: Registry Value' to '1'.............................. <1 second: Collected
+-- [obj:3530103] Ensure 'LmCompatibilityLevel' is 'Windows: Registry Value' to '5'.................. <1 second: Collected
+-- [obj:3530105] Ensure 'LDAPClientIntegrity' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530106] Ensure 'NTLMMinClientSec' is 'Windows: Registry Value' to '537395200'.............. <1 second: Collected
+-- [obj:3530108] Ensure 'NTLMMinServerSec' is 'Windows: Registry Value' to '537395200'.............. <1 second: Collected
+-- [obj:3530112] Ensure 'ObCaseInsensitive' is equal to '1'......................................... <1 second: Collected
+-- [obj:3530114] Ensure 'ProtectionMode' is 'Windows: Registry Value' to '1'........................ <1 second: Collected
+-- [obj:3530118] Ensure 'FilterAdministratorToken' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530120] Ensure 'ConsentPromptBehaviorAdmin' is 'Windows: Registry Value' to '2'............ <1 second: Collected
+-- [obj:3530122] Ensure 'ConsentPromptBehaviorAdmin' is 'Windows: Registry Value' to '1'............ <1 second: Collected
+-- [obj:3530124] Ensure 'ConsentPromptBehaviorUser' is 'Windows: Registry Value' to '0'............. <1 second: Collected
+-- [obj:3530126] Ensure 'EnableInstallerDetection' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530127] Ensure 'EnableSecureUIAPaths' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3530129] Ensure 'EnableLUA' is 'Windows: Registry Value' to '1'............................. <1 second: Collected
+-- [obj:3530132] Ensure 'PromptOnSecureDesktop' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3530134] Ensure 'EnableVirtualization' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3529837] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529839] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529858] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529860] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529863] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529865] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529868] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529874] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529876] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529885] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529888] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529893] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529896] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529926] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529933] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529938] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529941] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529953] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529958] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3529962] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529976] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529980] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529983] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3530030] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3530025] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3530036] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3530063] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3530066] Ensure 'Start' is 'Existence Test' to 'none_exist'................................. <1 second: Collected
+-- [obj:3530069] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3530073] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3530077] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3530083] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3529880] Ensure 'EnableFirewall' is 'Windows: Registry Value' to '1'........................ <1 second: Collected
+-- [obj:3529883] Ensure 'DefaultInboundAction' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3529887] Ensure 'DefaultOutboundAction' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3529890] Ensure 'DisableNotifications' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3529894] Ensure 'LogFilePath' is 'Windows: ...Root%\System32\logfiles\firewall\domainfw.log' <1 second: Collected
+-- [obj:3529897] Ensure 'LogFileSize' is 'Windows: Registry Value' to '16384'....................... <1 second: Collected
+-- [obj:3529900] Ensure 'LogDroppedPackets' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3529903] Ensure 'LogSuccessfulConnections' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3529906] Ensure 'EnableFirewall' is 'Windows: Registry Value' to '1'........................ <1 second: Collected
+-- [obj:3529910] Ensure 'DefaultInboundAction' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3529913] Ensure 'DefaultOutboundAction' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3529916] Ensure 'DisableNotifications' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3529919] Ensure 'LogFilePath' is 'Windows: ...oot%\System32\logfiles\firewall\privatefw.log' <1 second: Collected
+-- [obj:3529922] Ensure 'LogFileSize' is 'Windows: Registry Value' to '16384'....................... <1 second: Collected
+-- [obj:3529925] Ensure 'LogDroppedPackets' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3529928] Ensure 'LogSuccessfulConnections' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3529931] Ensure 'EnableFirewall' is 'Windows: Registry Value' to '1'........................ <1 second: Collected
+-- [obj:3529935] Ensure 'DefaultInboundAction' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3529939] Ensure 'DefaultOutboundAction' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3529944] Ensure 'DisableNotifications' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3529949] Ensure 'AllowLocalPolicyMerge' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3529954] Ensure 'AllowLocalIPsecPolicyMerge' is 'Windows: Registry Value' to '0'............ <1 second: Collected
+-- [obj:3529959] Ensure 'LogFilePath' is 'Windows: ...Root%\System32\logfiles\firewall\publicfw.log' <1 second: Collected
+-- [obj:3529964] Ensure 'LogFileSize' is 'Windows: Registry Value' to '16384'....................... <1 second: Collected
+-- [obj:3529970] Ensure 'LogDroppedPackets' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3529977] Ensure 'LogSuccessfulConnections' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3529940] Ensure 'credential_validation' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.............. <1 second: Collected
+-- [obj:3529942] Ensure 'application_group_management' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'....... <1 second: Collected
+-- [obj:3529945] Ensure 'security_group_management' is 'Equals' to 'AUDIT_SUCCESS'.................. <1 second: Collected
+-- [obj:3529947] Ensure 'security_group_management' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.......... <1 second: Collected
+-- [obj:3529951] Ensure 'user_account_management' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'............ <1 second: Collected
+-- [obj:3529955] Ensure 'pnp_activity' is 'Equals' to 'AUDIT_SUCCESS'............................... <1 second: Collected
+-- [obj:3529956] Ensure 'pnp_activity' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'....................... <1 second: Collected
+-- [obj:3529960] Ensure 'process_creation' is 'Equals' to 'AUDIT_SUCCESS'........................... <1 second: Collected
+-- [obj:3529963] Ensure 'process_creation' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'................... <1 second: Collected
+-- [obj:3529966] Ensure 'account_lockout' is 'Equals' to 'AUDIT_FAILURE'............................ <1 second: Collected
+-- [obj:3529969] Ensure 'account_lockout' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.................... <1 second: Collected
+-- [obj:3529973] Ensure 'group_membership' is 'Equals' to 'AUDIT_SUCCESS'........................... <1 second: Collected
+-- [obj:3529975] Ensure 'group_membership' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'................... <1 second: Collected
+-- [obj:3529979] Ensure 'logoff' is 'Equals' to 'AUDIT_SUCCESS'..................................... <1 second: Collected
+-- [obj:3529982] Ensure 'logoff' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'............................. <1 second: Collected
+-- [obj:3529985] Ensure 'logon' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.............................. <1 second: Collected
+-- [obj:3529989] Ensure 'other_logon_logoff_events' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.......... <1 second: Collected
+-- [obj:3529994] Ensure 'special_logon' is 'Equals' to 'AUDIT_SUCCESS'.............................. <1 second: Collected
+-- [obj:3529995] Ensure 'special_logon' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'...................... <1 second: Collected
+-- [obj:3530000] Ensure 'detailed_file_share' is 'Equals' to 'AUDIT_FAILURE'........................ <1 second: Collected
+-- [obj:3530003] Ensure 'detailed_file_share' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'................ <1 second: Collected
+-- [obj:3530006] Ensure 'file_share' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'......................... <1 second: Collected
+-- [obj:3530010] Ensure 'other_object_access_events' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'......... <1 second: Collected
+-- [obj:3530013] Ensure 'removable_storage' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.................. <1 second: Collected
+-- [obj:3530017] Ensure 'audit_policy_change' is 'Equals' to 'AUDIT_SUCCESS'........................ <1 second: Collected
+-- [obj:3530019] Ensure 'audit_policy_change' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'................ <1 second: Collected
+-- [obj:3530023] Ensure 'authentication_policy_change' is 'Equals' to 'AUDIT_SUCCESS'............... <1 second: Collected
+-- [obj:3530024] Ensure 'authentication_policy_change' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'....... <1 second: Collected
+-- [obj:3530029] Ensure 'authorization_policy_change' is 'Equal' to 'AUDIT_SUCCESS'................. <1 second: Collected
+-- [obj:3530031] Ensure 'authorization_policy_change' is 'Equal' to 'AUDIT_SUCCESS_FAILURE'......... <1 second: Collected
+-- [obj:3530035] Ensure 'mpssvc_rule_level_policy_change' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.... <1 second: Collected
+-- [obj:3530037] Ensure 'other_policy_change_events' is 'Equals' to 'AUDIT_FAILURE'................. <1 second: Collected
+-- [obj:3530041] Ensure 'other_policy_change_events' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'......... <1 second: Collected
+-- [obj:3530043] Ensure 'sensitive_privilege_use' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'............ <1 second: Collected
+-- [obj:3530048] Ensure 'ipsec_driver' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'....................... <1 second: Collected
+-- [obj:3530051] Ensure 'other_system_events' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'................ <1 second: Collected
+-- [obj:3530055] Ensure 'security_state_change' is 'Equals' to 'AUDIT_SUCCESS'...................... <1 second: Collected
+-- [obj:3530058] Ensure 'security_state_change' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.............. <1 second: Collected
+-- [obj:3530061] Ensure 'security_system_extension' is 'Equals' to 'AUDIT_SUCCESS'.................. <1 second: Collected
+-- [obj:3530064] Ensure 'security_system_extension' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'.......... <1 second: Collected
+-- [obj:3530068] Ensure 'system_integrity' is 'Equals' to 'AUDIT_SUCCESS_FAILURE'................... <1 second: Collected
+-- [obj:3529965] Ensure 'NoLockScreenCamera' is 'Windows: Registry Value' to '1'.................... <1 second: Collected
+-- [obj:3529972] Ensure 'NoLockScreenSlideshow' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3529978] Ensure 'AllowInputPersonalization' is 'Windows: Registry Value' to '0'............. <1 second: Collected
+-- [obj:3529991] Ensure 'DllName' is 'Windows: Regi...lue' to 'C:\Program Files\LAPS\CSE\AdmPwd.dll' <1 second: Collected
+-- [obj:3529997] Ensure 'DllName' is 'Windows: Regi...lue' to 'C:\Program Files\LAPS\CSE\AdmPwd.dll' <1 second: Collected
+-- [obj:3530004] Ensure 'PwdExpirationProtectionEnabled' is 'Windows: Registry Value' to '1'........ <1 second: Collected
+-- [obj:3530008] Ensure 'AdmPwdEnabled' is 'Windows: Registry Value' to '1'......................... <1 second: Collected
+-- [obj:3530014] Ensure 'PasswordComplexity' is 'Windows: Registry Value' to '4'.................... <1 second: Collected
+-- [obj:3530020] Ensure 'PasswordLength' is 'Windows: Registry Value' to '15'....................... <1 second: Collected
+-- [obj:3530027] Ensure 'PasswordAgeDays' is 'Windows: Registry Value' to '30'...................... <1 second: Collected
+-- [obj:3530033] Ensure 'LocalAccountTokenFilterPolicy' is 'Windows: Registry Value' to '0'......... <1 second: Collected
+-- [obj:3530040] Ensure 'RpcAuthnLevelPrivacyEnabled' is 'Windows: Registry Value' to '1'........... <1 second: Collected
+-- [obj:3530053] Ensure 'Start' is 'Windows: Registry Value' to '4'................................. <1 second: Collected
+-- [obj:3530059] Ensure 'SMB1' is 'Windows: Registry Value' to '0'.................................. <1 second: Collected
+-- [obj:3530065] Ensure 'DisableExceptionChainValidation' is 'Windows: Registry Value' to '0'....... <1 second: Collected
+-- [obj:3530071] Ensure 'RunAsPPL' is 'Windows: Registry Value' to '1'.............................. <1 second: Collected
+-- [obj:3530075] Ensure 'NodeType' is 'Windows: Registry Value' to '2'.............................. <1 second: Collected
+-- [obj:3530078] Ensure 'UseLogonCredential' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3530081] Ensure 'AutoAdminLogon' is 'Windows: Registry Value' to '0'........................ <1 second: Collected
+-- [obj:3530085] Ensure 'DefaultPassword' does not exist............................................ <1 second: Collected
+-- [obj:3530087] Ensure 'DisableIPSourceRouting' is 'Windows: Registry Value' to '2'................ <1 second: Collected
+-- [obj:3530089] Ensure 'DisableIPSourceRouting' is 'Windows: Registry Value' to '2'................ <1 second: Collected
+-- [obj:3530094] Ensure 'EnableICMPRedirect' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3530098] Ensure 'nonamereleaseondemand' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3530102] Ensure 'SafeDllSearchMode' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3530104] Ensure 'ScreenSaverGracePeriod' is 'Windows: Registry Value' to '5'................ <1 second: Collected
+-- [obj:3530111] Ensure 'WarningLevel' is 'Windows: Registry Value' to '90'......................... <1 second: Collected
+-- [obj:3530117] Ensure 'EnableNetbios' is 'Windows: Registry Value' to '2'......................... <1 second: Collected
+-- [obj:3530119] Ensure 'EnableNetbios' is 'Windows: Registry Value' to '0'......................... <1 second: Collected
+-- [obj:3530121] Ensure 'EnableMulticast' is 'Windows: Registry Value' to '0'....................... <1 second: Collected
+-- [obj:3530125] Ensure 'AllowInsecureGuestAuth' is 'Windows: Registry Value' to '0'................ <1 second: Collected
+-- [obj:3530140] Ensure 'NC_AllowNetBridge_NLA' is equal to '0'..................................... <1 second: Collected
+-- [obj:3530141] Ensure 'NC_ShowSharedAccessUI' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530142] Ensure 'NC_StdDomainUserSetLocation' is 'Windows: Registry Value' to '1'........... <1 second: Collected
+-- [obj:3530143] Ensure '\\*\NETLOGON' is 'Windows:...re([Mm]utual[Aa]uthentication|[Ii]ntegrity)=1' <1 second: Collected
+-- [obj:3530144] Ensure '\\*\SYSVOL' is 'Windows: R...re([Mm]utual[Aa]uthentication|[Ii]ntegrity)=1' <1 second: Collected
+-- [obj:3530152] Ensure 'fMinimizeConnections' is 'Windows: Registry Value' to '3'.................. <1 second: Collected
+-- [obj:3530154] Ensure 'fBlockNonDomain' is 'Windows: Registry Value' to '1'....................... <1 second: Collected
+-- [obj:3530155] Ensure 'AutoConnectAllowedOEM' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530156] Ensure 'RegisterSpoolerRemoteRpcEndPoint' is 'Windows: Registry Value' to '2'...... <1 second: Collected
+-- [obj:3530157] Ensure 'RedirectionguardPolicy' is 'Windows: Registry Value' to '1'................ <1 second: Collected
+-- [obj:3530158] Ensure 'RpcUseNamedPipeProtocol' is 'Windows: Registry Value' to '0'............... <1 second: Collected
+-- [obj:3530159] Ensure 'RpcAuthentication' is 'Windows: Registry Value' to '0'..................... <1 second: Collected
+-- [obj:3530160] Ensure 'RpcProtocols' is 'Windows: Registry Value' to '5'.......................... <1 second: Collected
+-- [obj:3530161] Ensure 'ForceKerberosForRpc' is 'Windows: Registry Value' to '0'................... <1 second: Collected
+-- [obj:3530162] Ensure 'ForceKerberosForRpc' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530163] Ensure 'RpcTcpPort' is 'Windows: Registry Value' to '0'............................ <1 second: Collected
+-- [obj:3530164] Ensure 'RestrictDriverInstallation...istrators' is 'Windows: Registry Value' to '1' <1 second: Collected
+-- [obj:3530165] Ensure 'CopyFilesPolicy' is 'Windows: Registry Value' to '1'....................... <1 second: Collected
+-- [obj:3530166] Ensure 'NoWarningNoElevationOnInstall' is 'Windows: Registry Value' to '0'......... <1 second: Collected
+-- [obj:3530167] Ensure 'UpdatePromptSettings' is 'Windows: Registry Value' to '0'.................. <1 second: Collected
+-- [obj:3530169] Ensure 'ProcessCreationIncludeCmdLine_Enabled' is 'Windows: Registry Value' to '1'. <1 second: Collected
+-- [obj:3530170] Ensure 'AllowEncryptionOracle' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530171] Ensure 'AllowProtectedCreds' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530197] Ensure 'PreventDeviceMetadataFromNetwork' is 'Windows: Registry Value' to '1'...... <1 second: Collected
+-- [obj:3530198] Ensure 'DriverLoadPolicy' is 'Windows: Registry Value' to '3'...................... <1 second: Collected
+-- [obj:3530199] Ensure 'NoBackgroundPolicy' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3530200] Ensure 'NoGPOListChanges' is 'Windows: Registry Value' to '0'...................... <1 second: Collected
+-- [obj:3530201] Ensure 'EnableCdp' is 'Windows: Registry Value' to '0'............................. <1 second: Collected
+-- [obj:3530202] Ensure 'DisableBkGndGroupPolicy' is 'Existence Test' to 'none_exist'............... <1 second: Collected
+-- [obj:3530204] Ensure 'DisableWebPnPDownload' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3530208] Ensure 'NoWebServices' is 'Windows: Registry Value' to '1'......................... <1 second: Collected
+-- [obj:3540278] Ensure 'AllowCustomSSPsAPs' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3530227] Ensure 'BlockUserFromShowingAccoun...sOnSignin' is 'Windows: Registry Value' to '1' <1 second: Collected
+-- [obj:3530228] Ensure 'DontDisplayNetworkSelectionUI' is 'Windows: Registry Value' to '1'......... <1 second: Collected
+-- [obj:3530229] Ensure 'DontEnumerateConnectedUsers' is 'Windows: Registry Value' to '1'........... <1 second: Collected
+-- [obj:3530230] Ensure 'EnumerateLocalUsers' is 'Windows: Registry Value' to '0'................... <1 second: Collected
+-- [obj:3530231] Ensure 'DisableLockScreenAppNotifications' is 'Windows: Registry Value' to '1'..... <1 second: Collected
+-- [obj:3530232] Ensure 'BlockDomainPicturePassword' is 'Windows: Registry Value' to '1'............ <1 second: Collected
+-- [obj:3530233] Ensure 'AllowDomainPINLogon' is 'Windows: Registry Value' to '0'................... <1 second: Collected
+-- [obj:3530236] Ensure 'DCSettingIndex' is 'Windows: Registry Value' to '0'........................ <1 second: Collected
+-- [obj:3530237] Ensure 'ACSettingIndex' is 'Windows: Registry Value' to '0'........................ <1 second: Collected
+-- [obj:3530240] Ensure 'DCSettingIndex' is 'Windows: Registry Value' to '1'........................ <1 second: Collected
+-- [obj:3530241] Ensure 'ACSettingIndex' is 'Windows: Registry Value' to '1'........................ <1 second: Collected
+-- [obj:3530242] Ensure 'fAllowUnsolicited' is 'Windows: Registry Value' to '0'..................... <1 second: Collected
+-- [obj:3530243] Ensure 'fAllowToGetHelp' is 'Windows: Registry Value' to '0'....................... <1 second: Collected
+-- [obj:3530244] Ensure 'EnableAuthEpResolution' is 'Windows: Registry Value' to '1'................ <1 second: Collected
+-- [obj:3530245] Ensure 'RestrictRemoteClients' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3530252] Ensure 'BlockNonAdminUserInstall' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530253] Ensure 'LetAppsActivateWithVoiceAboveLock' is 'Windows: Registry Value' to '2'..... <1 second: Collected
+-- [obj:3530254] Ensure 'MSAOptional' is 'Windows: Registry Value' to '1'........................... <1 second: Collected
+-- [obj:3530256] Ensure 'NoAutoplayfornonVolume' is 'Windows: Registry Value' to '1'................ <1 second: Collected
+-- [obj:3530257] Ensure 'NoAutorun' is 'Windows: Registry Value' to '1'............................. <1 second: Collected
+-- [obj:3530258] Ensure 'NoDriveTypeAutoRun' is 'Windows: Registry Value' to '255'.................. <1 second: Collected
+-- [obj:3530259] Ensure 'EnhancedAntiSpoofing' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3530309] Ensure 'DisableConsumerAccountStateContent' is 'Windows: Registry Value' to '1'.... <1 second: Collected
+-- [obj:3530311] Ensure 'DisableWindowsConsumerFeatures' is 'Windows: Registry Value' to '1'........ <1 second: Collected
+-- [obj:3530312] Ensure 'RequirePinForPairing' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3530313] Ensure 'RequirePinForPairing' is 'Windows: Registry Value' to '2'.................. <1 second: Collected
+-- [obj:3530314] Ensure 'DisablePasswordReveal' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3530315] Ensure 'EnumerateAdministrators' is 'Windows: Registry Value' to '0'............... <1 second: Collected
+-- [obj:3530316] Ensure 'NoLocalPasswordResetQuestions' is 'Windows: Registry Value' to '1'......... <1 second: Collected
+-- [obj:3530317] Ensure 'AllowTelemetry' is 'Windows: Registry Value' to '0'........................ <1 second: Collected
+-- [obj:3530318] Ensure 'AllowTelemetry' is 'Windows: Registry Value' to '1'........................ <1 second: Collected
+-- [obj:3530320] Ensure 'DisableOneSettingsDownloads' is 'Windows: Registry Value' to '1'........... <1 second: Collected
+-- [obj:3530321] Ensure 'DoNotShowFeedbackNotifications' is 'Windows: Registry Value' to '1'........ <1 second: Collected
+-- [obj:3530322] Ensure 'EnableOneSettingsAuditing' is 'Windows: Registry Value' to '1'............. <1 second: Collected
+-- [obj:3530323] Ensure 'LimitDiagnosticLogCollection' is 'Windows: Registry Value' to '1'.......... <1 second: Collected
+-- [obj:3530324] Ensure 'LimitDumpCollection' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530325] Ensure 'AllowBuildPreview' is 'Windows: Registry Value' to '0'..................... <1 second: Collected
+-- [obj:3530326] Ensure 'DODownloadMode' is 'Windows: Registry Value' not set to '3'................ <1 second: Collected
+-- [obj:3530327] Ensure 'EnableAppInstaller' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3530328] Ensure 'EnableExperimentalFeatures' is 'Windows: Registry Value' to '0'............ <1 second: Collected
+-- [obj:3530329] Ensure 'EnableHashOverride' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3530330] Ensure 'EnableMSAppInstallerProtocol' is 'Windows: Registry Value' to '0'.......... <1 second: Collected
+-- [obj:3530392] Ensure 'Retention' is 'Windows: Registry Value' to '0'............................. <1 second: Collected
+-- [obj:3530393] Ensure 'MaxSize' is 'Windows: Registry Value' to '32768'........................... <1 second: Collected
+-- [obj:3530394] Ensure 'Retention' is 'Windows: Registry Value' to '0'............................. <1 second: Collected
+-- [obj:3530395] Ensure 'MaxSize' is 'Windows: Registry Value' to '196608'.......................... <1 second: Collected
+-- [obj:3530396] Ensure 'Retention' is 'Windows: Registry Value' to '0'............................. <1 second: Collected
+-- [obj:3530397] Ensure 'MaxSize' is 'Windows: Registry Value' to '32768'........................... <1 second: Collected
+-- [obj:3530398] Ensure 'Retention' is 'Windows: Registry Value' to '0'............................. <1 second: Collected
+-- [obj:3530399] Ensure 'MaxSize' is 'Windows: Registry Value' to '32768'........................... <1 second: Collected
+-- [obj:3530400] Ensure 'NoDataExecutionPrevention' is 'Windows: Registry Value' to '0'............. <1 second: Collected
+-- [obj:3530402] Ensure 'NoHeapTerminationOnCorruption' is 'Windows: Registry Value' to '0'......... <1 second: Collected
+-- [obj:3530403] Ensure 'PreXPSP2ShellProtocolBehavior' is 'Windows: Registry Value' to '0'......... <1 second: Collected
+-- [obj:3530404] Ensure 'DisableHomeGroup' is 'Windows: Registry Value' to '1'...................... <1 second: Collected
+-- [obj:3530405] Ensure 'NotifyDisableIEOptions' is 'Windows: Registry Value' to '1'................ <1 second: Collected
+-- [obj:3530409] Ensure 'DisableUserAuth' is 'Windows: Registry Value' to '1'....................... <1 second: Collected
+-- [obj:3530410] Ensure 'LocalSettingOverrideSpynetReporting' is 'Windows: Registry Value' to '0'... <1 second: Collected
+-- [obj:3530413] Ensure 'ExploitGuard_ASR_Rules' is 'Windows: Registry Value' to '1'................ <1 second: Collected
+-- [obj:3530414] Ensure '26190899-1602-49e8-8b27-eb1d0a1ce869' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530415] Ensure '3b576869-a4ec-4529-8536-b80a7769e899' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530416] Ensure '5beb7efe-fd9a-4556-801d-275e5ffc04cc' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530417] Ensure '75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530418] Ensure '7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530419] Ensure '92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530420] Ensure '9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530421] Ensure 'b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530422] Ensure 'be9ba2d9-53ea-4cdc-84e5-9b1eeee46550' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530423] Ensure 'd3e037e1-3eb8-44c8-a917-57927947596d' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530424] Ensure 'd4f940ab-401b-4efc-aadc-ad5f3c50688a' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530425] Ensure 'e6db77e5-3df2-4cf1-b95a-636979351e5b' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530426] Ensure '56a863a9-875e-4185-98a7-b882c64b5ce5' is 'Windows: Registry Value' to '1'.. <1 second: Collected
+-- [obj:3530427] Ensure 'EnableNetworkProtection' is 'Windows: Registry Value' to '1'............... <1 second: Collected
+-- [obj:3530429] Ensure 'DisableIOAVProtection' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530430] Ensure 'DisableRealtimeMonitoring' is 'Windows: Registry Value' to '0'............. <1 second: Collected
+-- [obj:3530431] Ensure 'DisableBehaviorMonitoring' is 'Windows: Registry Value' to '0'............. <1 second: Collected
+-- [obj:3530432] Ensure 'DisableScriptScanning' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530434] Ensure 'DisableRemovableDriveScanning' is 'Windows: Registry Value' to '0'......... <1 second: Collected
+-- [obj:3530435] Ensure 'DisableEmailScanning' is 'Windows: Registry Value' to '0'.................. <1 second: Collected
+-- [obj:3530436] Ensure 'PUAProtection' is 'Windows: Registry Value' to '1'......................... <1 second: Collected
+-- [obj:3530437] Ensure 'DisableAntiSpyware' is 'Windows: Registry Value' to '0'.................... <1 second: Collected
+-- [obj:3530451] Ensure 'DisableFileSyncNGSC' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530455] Ensure 'DisablePasswordSaving' is 'Windows: Registry Value' to '1'................. <1 second: Collected
+-- [obj:3530459] Ensure 'fDisableCdm' is 'Windows: Registry Value' to '1'........................... <1 second: Collected
+-- [obj:3530464] Ensure 'fPromptForPassword' is 'Windows: Registry Value' to '1'.................... <1 second: Collected
+-- [obj:3530465] Ensure 'fEncryptRPCTraffic' is 'Windows: Registry Value' to '1'.................... <1 second: Collected
+-- [obj:3530466] Ensure 'SecurityLayer' is 'Windows: Registry Value' to '2'......................... <1 second: Collected
+-- [obj:3530467] Ensure 'UserAuthentication' is 'Windows: Registry Value' to '1'.................... <1 second: Collected
+-- [obj:3530468] Ensure 'MinEncryptionLevel' is 'Windows: Registry Value' to '3'.................... <1 second: Collected
+-- [obj:3530472] Ensure 'DeleteTempDirsOnExit' is 'Windows: Registry Value' to '1'.................. <1 second: Collected
+-- [obj:3530473] Ensure 'DisableEnclosureDownload' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530476] Ensure 'AllowCortana' is 'Windows: Registry Value' to '0'.......................... <1 second: Collected
+-- [obj:3530477] Ensure 'AllowCortanaAboveLock' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530478] Ensure 'AllowIndexingEncryptedStoresOrItems' is 'Windows: Registry Value' to '0'... <1 second: Collected
+-- [obj:3530479] Ensure 'AllowSearchToUseLocation' is 'Windows: Registry Value' to '0'.............. <1 second: Collected
+-- [obj:3530484] Ensure 'RequirePrivateStoreOnly' is 'Windows: Registry Value' to '1'............... <1 second: Collected
+-- [obj:3530485] Ensure 'AutoDownload' is 'Windows: Registry Value' to '4'.......................... <1 second: Collected
+-- [obj:3530486] Ensure 'DisableOSUpgrade' is 'Windows: Registry Value' to '1'...................... <1 second: Collected
+-- [obj:3530488] Ensure 'AllowNewsAndInterests' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530494] Ensure 'ShellSmartScreenLevel' is 'Windows: Registry Value' to 'Block'............. <1 second: Collected
+-- [obj:3530493] Ensure 'EnableSmartScreen' is 'Windows: Registry Value' to '1'..................... <1 second: Collected
+-- [obj:3530495] Ensure 'EnabledV9' is 'Windows: Registry Value' to '1'............................. <1 second: Collected
+-- [obj:3530496] Ensure 'PreventOverride' is 'Windows: Registry Value' to '1'....................... <1 second: Collected
+-- [obj:3530499] Ensure 'AllowGameDVR' is 'Windows: Registry Value' to '0'.......................... <1 second: Collected
+-- [obj:3530502] Ensure 'AllowWindowsInkWorkspace' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530503] Ensure 'AllowWindowsInkWorkspace' is 'Windows: Registry Value' to '0'.............. <1 second: Collected
+-- [obj:3530504] Ensure 'EnableUserControl' is 'Windows: Registry Value' to '0'..................... <1 second: Collected
+-- [obj:3530505] Ensure 'AlwaysInstallElevated' is 'Windows: Registry Value' to '0'................. <1 second: Collected
+-- [obj:3530507] Ensure 'EnableMPR' is 'Windows: Registry Value' to '0'............................. <1 second: Collected
+-- [obj:3530508] Ensure 'DisableAutomaticRestartSignOn' is 'Windows: Registry Value' to '1'......... <1 second: Collected
+-- [obj:3530509] Ensure 'EnableScriptBlockLogging' is 'Windows: Registry Value' to '1'.............. <1 second: Collected
+-- [obj:3530510] Ensure 'EnableTranscripting' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530511] Ensure 'AllowBasic' (Client) is 'Windows: Registry Value' to '0'................... <1 second: Collected
+-- [obj:3530512] Ensure 'AllowUnencryptedTraffic' is 'Windows: Registry Value' to '0'............... <1 second: Collected
+-- [obj:3530513] Ensure 'AllowDigest' is 'Windows: Registry Value' to '0'........................... <1 second: Collected
+-- [obj:3530514] Ensure 'AllowBasic' (Service) is 'Windows: Registry Value' to '0'.................. <1 second: Collected
+-- [obj:3530516] Ensure 'AllowUnencryptedTraffic' is 'Windows: Registry Value' to '0'............... <1 second: Collected
+-- [obj:3530517] Ensure 'DisableRunAs' is 'Windows: Registry Value' to '1'.......................... <1 second: Collected
+-- [obj:3530519] Ensure 'AllowClipboardRedirection' is 'Windows: Registry Value' to '0'............. <1 second: Collected
+-- [obj:3530520] Ensure 'AllowNetworking' is 'Windows: Registry Value' to '0'....................... <1 second: Collected
+-- [obj:3530521] Ensure 'DisallowExploitProtectionOverride' is 'Windows: Registry Value' to '1'..... <1 second: Collected
+-- [obj:3530524] Ensure 'NoAutoRebootWithLoggedOnUsers' is 'Windows: Registry Value' to '0'......... <1 second: Collected
+-- [obj:3530527] Ensure 'NoAutoUpdate' is 'Windows: Registry Value' to '0'.......................... <1 second: Collected
+-- [obj:3530528] Ensure 'ScheduledInstallDay' is 'Windows: Registry Value' to '0'................... <1 second: Collected
+-- [obj:3530529] Ensure 'SetDisablePauseUXAccess' is 'Windows: Registry Value' to '1'............... <1 second: Collected
+-- [obj:3530530] Ensure 'ManagePreviewBuildsPolicyValue' is 'Windows: Registry Value' to '1'........ <1 second: Collected
+-- [obj:3530531] Ensure 'DeferFeatureUpdates' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530532] Ensure 'DeferFeatureUpdatesPeriodInDays' is 'Windows: Registry Value' to '180'..... <1 second: Collected
+-- [obj:3530533] Ensure 'DeferQualityUpdates' is 'Windows: Registry Value' to '1'................... <1 second: Collected
+-- [obj:3530534] Ensure 'DeferQualityUpdatesPeriodInDays' is 'Windows: Registry Value' to '0'....... <1 second: Collected
+-- [obj:3529986] Ensure 'ScreenSaveActive' is 'Windows: Registry Value' to '1'...................... <1 second: Collected
+-- [obj:3529990] Ensure 'ScreenSaverIsSecure' is 'Windows:User Registry Value' to '1'............... <1 second: Collected
+-- [obj:3529998] Ensure 'ScreenSaveTimeOut' is 'Win...Registry Value' is less than or equal to '900' <1 second: Collected
+-- [obj:3530002] Ensure 'ScreenSaveTimeOut' is 'Windows: User Registry Value' not equal to '0'...... <1 second: Collected
+-- [obj:3530009] Ensure 'NoToastApplicationNotifica...reen' is 'Windows: User Registry Value' to '1' <1 second: Collected
+-- [obj:3530026] Ensure 'SaveZoneInformation' is 'Windows: User Registry Value' to '2'.............. <1 second: Collected
+-- [obj:3530032] Ensure 'ScanWithAntiVirus' is 'Windows: User Registry Value' to '3'................ <1 second: Collected
+-- [obj:3530038] Ensure 'ConfigureWindowsSpotlight' is 'Windows: User Registry Value' to '2'........ <1 second: Collected
+-- [obj:3530044] Ensure 'DisableThirdPartySuggestions' is 'Windows: User Registry Value' to '1'..... <1 second: Collected
+-- [obj:3530062] Ensure 'DisableSpotlightCollection...top' is 'Windows: User Registry Value' to ''1" <1 second: Collected
+-- [obj:3530072] Ensure 'NoInplaceSharing' is 'Windows: User Registry Value' to '1'................. <1 second: Collected
+-- [obj:3530079] Ensure 'AlwaysInstallElevated' is 'Windows: User Registry Value' to '0'............ <1 second: Collected
+
+- System Characteristics Collection: 2 minutes
+
+- Evaluating Definitions
+01/417: [def:3529809] (L1) Ensure 'Enforce password history' is set to '24 or more password(s)'..... <1 second: false
+02/417: [def:3529810] (L1) Ensure 'Maximum password age' is set to '365 or fewer days, but not 0'... <1 second: true
+03/417: [def:3529811] (L1) Ensure 'Maximum password age' is set to '365 or fewer days, but not 0'... <1 second: true
+04/417: [def:3529812] (L1) Ensure 'Minimum password age' is set to '1 or more day(s)'............... <1 second: false
+05/417: [def:3529813] (L1) Ensure 'Minimum password length' is set to '14 or more character(s)'..... <1 second: false
+06/417: [def:3529814] (L1) Ensure 'Password must meet complexity requirements' is set to 'Enabled'.. <1 second: false
+07/417: [def:3529815] (L1) Ensure 'Relax minimum password length limits' is set to 'Enabled'........ <1 second: false
+08/417: [def:3529816] (L1) Ensure 'Store passwords using reversible encryption' is set to 'Disabled' <1 second: true
+09/417: [def:3529818] (L1) Ensure 'Account lockout duration' is set to '15 or more minute(s)'....... <1 second: true
+10/417: [def:3529820] (L1) Ensure 'Account lockout ... or fewer invalid logon attempt(s), but not 0' <1 second: true
+11/417: [def:3529822] (L1) Ensure 'Account lockout ... or fewer invalid logon attempt(s), but not 0' <1 second: false
+12/417: [def:3529824] (L1) Ensure 'Reset account lo...ounter after' is set to '15 or more minute(s)' <1 second: true
+13/417: [def:3529817] (L1) Ensure 'Access Credential Manager as a trusted caller' is set to 'No One' <1 second: true
+14/417: [def:3529819] (L1) Ensure 'Access this comp... set to 'Administrators, Remote Desktop Users' <1 second: false
+15/417: [def:3529821] (L1) Ensure 'Act as part of the operating system' is set to 'No One'.......... <1 second: true
+16/417: [def:3529823] (L1) Ensure 'Adjust memory qu...dministrators, LOCAL SERVICE, NETWORK SERVICE' <1 second: false
+17/417: [def:3529825] (L1) Ensure 'Allow log on locally' is set to 'Administrators, Users'.......... <1 second: false
+18/417: [def:3529826] (L1) Ensure 'Allow log on thr... set to 'Administrators, Remote Desktop Users' <1 second: true
+19/417: [def:3529827] (L1) Ensure 'Back up files and directories' is set to 'Administrators'........ <1 second: false
+20/417: [def:3529829] (L1) Ensure 'Change the system time' is set to 'Administrators, LOCAL SERVICE' <1 second: true
+21/417: [def:3529830] (L1) Ensure 'Change the time ... set to 'Administrators, LOCAL SERVICE, Users' <1 second: true
+22/417: [def:3529832] (L1) Ensure 'Create a pagefile' is set to 'Administrators'.................... <1 second: true
+23/417: [def:3529833] (L1) Ensure 'Create a token object' is set to 'No One'........................ <1 second: true
+24/417: [def:3529835] (L1) Ensure 'Create global ob...tors, LOCAL SERVICE, NETWORK SERVICE, SERVICE' <1 second: true
+25/417: [def:3529836] (L1) Ensure 'Create permanent shared objects' is set to 'No One'.............. <1 second: true
+26/417: [def:3529838] (L1) Configure 'Create symbolic links'........................................ <1 second: true
+27/417: [def:3529840] (L1) Ensure 'Debug programs' is set to 'Administrators'....................... <1 second: true
+28/417: [def:3529841] (L1) Ensure 'Deny access to t...he network' to include 'Guests, Local account' <1 second: false
+29/417: [def:3529843] (L1) Ensure 'Deny log on as a batch job' to include 'Guests'.................. <1 second: false
+30/417: [def:3529844] (L1) Ensure 'Deny log on as a service' to include 'Guests'.................... <1 second: false
+31/417: [def:3529846] (L1) Ensure 'Deny log on locally' to include 'Guests'......................... <1 second: false
+32/417: [def:3529847] (L1) Ensure 'Deny log on thro...p Services' to include 'Guests, Local account' <1 second: false
+33/417: [def:3529849] (L1) Ensure 'Enable computer ... be trusted for delegation' is set to 'No One' <1 second: true
+34/417: [def:3529851] (L1) Ensure 'Force shutdown from a remote system' is set to 'Administrators'.. <1 second: true
+35/417: [def:3529852] (L1) Ensure 'Generate securit...ts' is set to 'LOCAL SERVICE, NETWORK SERVICE' <1 second: true
+36/417: [def:3529854] (L1) Ensure 'Impersonate a cl...tors, LOCAL SERVICE, NETWORK SERVICE, SERVICE' <1 second: true
+37/417: [def:3529857] (L1) Ensure 'Increase schedul...strators, Window Manager\Window Manager Group' <1 second: true
+38/417: [def:3529859] (L1) Ensure 'Load and unload device drivers' is set to 'Administrators'....... <1 second: true
+39/417: [def:3529861] (L1) Ensure 'Lock pages in memory' is set to 'No One'......................... <1 second: true
+40/417: [def:3529867] (L1) Ensure 'Manage auditing and security log' is set to 'Administrators'..... <1 second: true
+41/417: [def:3529869] (L1) Ensure 'Modify an object label' is set to 'No One'....................... <1 second: true
+42/417: [def:3529870] (L1) Ensure 'Modify firmware environment values' is set to 'Administrators'... <1 second: true
+43/417: [def:3529872] (L1) Ensure 'Perform volume maintenance tasks' is set to 'Administrators'..... <1 second: false
+44/417: [def:3529873] (L1) Ensure 'Profile single process' is set to 'Administrators'............... <1 second: true
+45/417: [def:3529875] (L1) Ensure 'Profile system p...to 'Administrators, NT SERVICE\WdiServiceHost' <1 second: true
+46/417: [def:3529877] (L1) Ensure 'Replace a proces...en' is set to 'LOCAL SERVICE, NETWORK SERVICE' <1 second: false
+47/417: [def:3529878] (L1) Ensure 'Restore files and directories' is set to 'Administrators'........ <1 second: false
+48/417: [def:3529881] (L1) Ensure 'Shut down the system' is set to 'Administrators, Users'.......... <1 second: false
+49/417: [def:3529884] (L1) Ensure 'Take ownership o...s or other objects' is set to 'Administrators' <1 second: true
+50/417: [def:3529886] (L1) Ensure 'Accounts: Block ...s can't add or log on with Microsoft accounts' <1 second: false
+51/417: [def:3529891] (L1) Ensure 'Accounts: Guest account status' is set to 'Disabled'............. <1 second: true
+52/417: [def:3529892] (L1) Ensure 'Accounts: Limit ...rds to console logon only' is set to 'Enabled' <1 second: true
+53/417: [def:3529895] (L1) Configure 'Accounts: Rename administrator account'....................... <1 second: true
+54/417: [def:3529898] (L1) Configure 'Accounts: Rename guest account'............................... <1 second: true
+55/417: [def:3529901] (L1) Ensure 'Audit: Force aud... policy category settings' is set to 'Enabled' <1 second: false
+56/417: [def:3529905] (L1) Ensure 'Audit: Shut down...e to log security audits' is set to 'Disabled' <1 second: true
+57/417: [def:3529908] (L1) Ensure 'Devices: Allowed... set to 'Administrators and Interactive Users' <1 second: false
+58/417: [def:3529914] (L1) Ensure 'Domain member: D...ure channel data (always)' is set to 'Enabled' <1 second: true
+59/417: [def:3529917] (L1) Ensure 'Domain member: D...nnel data (when possible)' is set to 'Enabled' <1 second: true
+60/417: [def:3529920] (L1) Ensure 'Domain member: D...nnel data (when possible)' is set to 'Enabled' <1 second: true
+61/417: [def:3529923] (L1) Ensure 'Domain member: D...account password changes' is set to 'Disabled' <1 second: true
+62/417: [def:3529927] (L1) Ensure 'Domain member: M...d age' is set to '30 or fewer days, but not 0' <1 second: true
+63/417: [def:3529929] (L1) Ensure 'Domain member: M...d age' is set to '30 or fewer days, but not 0' <1 second: true
+64/417: [def:3529932] (L1) Ensure 'Domain member: R...000 or later) session key' is set to 'Enabled' <1 second: true
+65/417: [def:3529937] (L1) Ensure 'Interactive logo...not require CTRL+ALT+DEL' is set to 'Disabled' <1 second: false
+66/417: [def:3529943] (L1) Ensure 'Interactive logo...'t display last signed-in' is set to 'Enabled' <1 second: false
+67/417: [def:3529957] (L1) Ensure 'Interactive logo... is set to '900 or fewer second(s), but not 0' <1 second: false
+68/417: [def:3529961] (L1) Ensure 'Interactive logo... is set to '900 or fewer second(s), but not 0' <1 second: false
+69/417: [def:3529968] (L1) Configure 'Interactive l...: Message text for users attempting to log on' <1 second: false
+70/417: [def:3529974] (L1) Configure 'Interactive l... Message title for users attempting to log on' <1 second: false
+71/417: [def:3529987] (L1) Ensure 'Interactive logo... expiration' is set to 'between 5 and 14 days' <1 second: true
+72/417: [def:3529993] (L1) Ensure 'Interactive logo... expiration' is set to 'between 5 and 14 days' <1 second: true
+73/417: [def:3529999] (L1) Ensure 'Interactive logo...havior' is set to 'Lock Workstation' or higher <1 second: false
+74/417: [def:3530005] (L1) Ensure 'Microsoft networ...n communications (always)' is set to 'Enabled' <1 second: false
+75/417: [def:3530011] (L1) Ensure 'Microsoft networ...ations (if server agrees)' is set to 'Enabled' <1 second: true
+76/417: [def:3530015] (L1) Ensure 'Microsoft networ... third-party SMB servers' is set to 'Disabled' <1 second: true
+77/417: [def:3530022] (L1) Ensure 'Microsoft networ...ing session' is set to '15 or fewer minute(s)' <1 second: true
+78/417: [def:3530028] (L1) Ensure 'Microsoft networ...n communications (always)' is set to 'Enabled' <1 second: false
+79/417: [def:3530034] (L1) Ensure 'Microsoft networ...ations (if client agrees)' is set to 'Enabled' <1 second: false
+80/417: [def:3530039] (L1) Ensure 'Microsoft networ...s when logon hours expire' is set to 'Enabled' <1 second: true
+81/417: [def:3530045] (L1) Ensure 'Microsoft networ...et to 'Accept if provided by client' or higher <1 second: false
+82/417: [def:3530050] (L1) Ensure 'Network access: ...ous SID/Name translation' is set to 'Disabled' <1 second: true
+83/417: [def:3530054] (L1) Ensure 'Network access: ...umeration of SAM accounts' is set to 'Enabled' <1 second: true
+84/417: [def:3530060] (L1) Ensure 'Network access: ...f SAM accounts and shares' is set to 'Enabled' <1 second: false
+85/417: [def:3530067] (L1) Ensure 'Network access: ...or network authentication' is set to 'Enabled' <1 second: false
+86/417: [def:3530070] (L1) Ensure 'Network access: ...apply to anonymous users' is set to 'Disabled' <1 second: true
+87/417: [def:3530074] (L1) Ensure 'Network access: ... can be accessed anonymously' is set to 'None' <1 second: true
+88/417: [def:3530076] (L1) Ensure 'Network access: Remotely accessible registry paths' is configured <1 second: true
+89/417: [def:3530080] (L1) Ensure 'Network access: ...le registry paths and sub-paths' is configured <1 second: true
+90/417: [def:3530082] (L1) Ensure 'Network access: ...to Named Pipes and Shares' is set to 'Enabled' <1 second: true
+91/417: [def:3530086] (L1) Ensure 'Network access: ... set to 'Administrators: Remote Access: Allow' <1 second: false
+92/417: [def:3530090] (L1) Ensure 'Network access: ... can be accessed anonymously' is set to 'None' <1 second: true
+93/417: [def:3530088] (L1) Ensure 'Network access: ... can be accessed anonymously' is set to 'None' <1 second: false
+94/417: [def:3530091] (L1) Ensure 'Network access: ...ssic - local users authenticate as themselves' <1 second: true
+95/417: [def:3530093] (L1) Ensure 'Network security...omputer identity for NTLM' is set to 'Enabled' <1 second: false
+96/417: [def:3530095] (L1) Ensure 'Network security...em NULL session fallback' is set to 'Disabled' <1 second: false
+97/417: [def:3530097] (L1) Ensure 'Network Security...to use online identities' is set to 'Disabled' <1 second: false
+98/417: [def:3530099] (L1) Ensure 'Network security...A1, AES256_HMAC_SHA1, Future encryption types' <1 second: false
+99/417: [def:3530101] (L1) Ensure 'Network security...e on next password change' is set to 'Enabled' <1 second: true
+100/417: [def:3530103] (L1) Ensure 'Network securit... 'Send NTLMv2 response only. Refuse LM & NTLM' <1 second: false
+101/417: [def:3530105] (L1) Ensure 'Network securit...ments' is set to 'Negotiate signing' or higher <1 second: true
+102/417: [def:3530106] (L1) Ensure 'Network securit... session security, Require 128-bit encryption' <1 second: false
+103/417: [def:3530108] (L1) Ensure 'Network securit... session security, Require 128-bit encryption' <1 second: false
+104/417: [def:3530112] (L1) Ensure 'System objects:...or non-Windows subsystems' is set to 'Enabled' <1 second: true
+105/417: [def:3530114] (L1) Ensure 'System objects:...cts (e.g. Symbolic Links)' is set to 'Enabled' <1 second: true
+106/417: [def:3530118] (L1) Ensure 'User Account Co...-in Administrator account' is set to 'Enabled' <1 second: false
+107/417: [def:3530120] (L1) Ensure 'User Account Co...t for consent on the secure desktop' or higher <1 second: false
+108/417: [def:3530122] (L1) Ensure 'User Account Co...t for consent on the secure desktop' or higher <1 second: false
+109/417: [def:3530124] (L1) Ensure 'User Account Co...set to 'Automatically deny elevation requests' <1 second: false
+110/417: [def:3530126] (L1) Ensure 'User Account Co... and prompt for elevation' is set to 'Enabled' <1 second: true
+111/417: [def:3530127] (L1) Ensure 'User Account Co...alled in secure locations' is set to 'Enabled' <1 second: true
+112/417: [def:3530129] (L1) Ensure 'User Account Co...rs in Admin Approval Mode' is set to 'Enabled' <1 second: true
+113/417: [def:3530132] (L1) Ensure 'User Account Co...n prompting for elevation' is set to 'Enabled' <1 second: true
+114/417: [def:3530134] (L1) Ensure 'User Account Co...res to per-user locations' is set to 'Enabled' <1 second: true
+115/417: [def:3529837] (L1) Ensure 'Computer Browse...wser)' is set to 'Disabled' or 'Not Installed' <1 second: false
+116/417: [def:3529839] (L1) Ensure 'Computer Browse...wser)' is set to 'Disabled' or 'Not Installed' <1 second: true
+117/417: [def:3529858] (L1) Ensure 'IIS Admin Servi...DMIN)' is set to 'Disabled' or 'Not Installed' <1 second: false
+118/417: [def:3529860] (L1) Ensure 'IIS Admin Servi...DMIN)' is set to 'Disabled' or 'Not Installed' <1 second: true
+119/417: [def:3529863] (L1) Ensure 'Infrared monito...rmon)' is set to 'Disabled' or 'Not Installed' <1 second: false
+120/417: [def:3529865] (L1) Ensure 'Infrared monito...rmon)' is set to 'Disabled' or 'Not Installed' <1 second: true
+121/417: [def:3529868] (L1) Ensure 'Internet Connec...ing (ICS) (SharedAccess)' is set to 'Disabled' <1 second: false
+122/417: [def:3529874] (L1) Ensure 'LxssManager (Lx...ager)' is set to 'Disabled' or 'Not Installed' <1 second: false
+123/417: [def:3529876] (L1) Ensure 'LxssManager (Lx...ager)' is set to 'Disabled' or 'Not Installed' <1 second: true
+124/417: [def:3529885] (L1) Ensure 'Microsoft FTP S...PSVC)' is set to 'Disabled' or 'Not Installed' <1 second: false
+125/417: [def:3529888] (L1) Ensure 'Microsoft FTP S...PSVC)' is set to 'Disabled' or 'Not Installed' <1 second: true
+126/417: [def:3529893] (L1) Ensure 'OpenSSH SSH Ser...sshd)' is set to 'Disabled' or 'Not Installed' <1 second: false
+127/417: [def:3529896] (L1) Ensure 'OpenSSH SSH Ser...sshd)' is set to 'Disabled' or 'Not Installed' <1 second: true
+128/417: [def:3529926] (L1) Ensure 'Remote Procedur...PC) Locator (RpcLocator)' is set to 'Disabled' <1 second: false
+129/417: [def:3529933] (L1) Ensure 'Routing and Remote Access (RemoteAccess)' is set to 'Disabled'.. <1 second: true
+130/417: [def:3529938] (L1) Ensure 'Simple TCP/IP S...ptcp)' is set to 'Disabled' or 'Not Installed' <1 second: false
+131/417: [def:3529941] (L1) Ensure 'Simple TCP/IP S...ptcp)' is set to 'Disabled' or 'Not Installed' <1 second: true
+132/417: [def:3529953] (L1) Ensure 'Special Adminis...csvr)' is set to 'Disabled' or 'Not Installed' <1 second: false
+133/417: [def:3529958] (L1) Ensure 'Special Adminis...csvr)' is set to 'Disabled' or 'Not Installed' <1 second: true
+134/417: [def:3529962] (L1) Ensure 'SSDP Discovery (SSDPSRV)' is set to 'Disabled'.................. <1 second: false
+135/417: [def:3529976] (L1) Ensure 'UPnP Device Host (upnphost)' is set to 'Disabled'............... <1 second: false
+136/417: [def:3529980] (L1) Ensure 'Web Management ...MSvc)' is set to 'Disabled' or 'Not Installed' <1 second: false
+137/417: [def:3529983] (L1) Ensure 'Web Management ...MSvc)' is set to 'Disabled' or 'Not Installed' <1 second: true
+138/417: [def:3530030] (L1) Ensure 'Windows Media P...kSvc)' is set to 'Disabled' or 'Not Installed' <1 second: false
+139/417: [def:3530025] (L1) Ensure 'Windows Media P...kSvc)' is set to 'Disabled' or 'Not Installed' <1 second: false
+140/417: [def:3530036] (L1) Ensure 'Windows Mobile Hotspot Service (icssvc)' is set to 'Disabled'... <1 second: false
+141/417: [def:3530063] (L1) Ensure 'World Wide Web ...3SVC)' is set to 'Disabled' or 'Not Installed' <1 second: false
+142/417: [def:3530066] (L1) Ensure 'World Wide Web ...3SVC)' is set to 'Disabled' or 'Not Installed' <1 second: true
+143/417: [def:3530069] (L1) Ensure 'Xbox Accessory ...ent Service (XboxGipSvc)' is set to 'Disabled' <1 second: false
+144/417: [def:3530073] (L1) Ensure 'Xbox Live Auth Manager (XblAuthManager)' is set to 'Disabled'... <1 second: false
+145/417: [def:3530077] (L1) Ensure 'Xbox Live Game Save (XblGameSave)' is set to 'Disabled'......... <1 second: false
+146/417: [def:3530083] (L1) Ensure 'Xbox Live Netwo... Service (XboxNetApiSvc)' is set to 'Disabled' <1 second: false
+147/417: [def:3529880] (L1) Ensure 'Windows Firewal...: Firewall state' is set to 'On (recommended)' <1 second: false
+148/417: [def:3529883] (L1) Ensure 'Windows Firewal...bound connections' is set to 'Block (default)' <1 second: false
+149/417: [def:3529887] (L1) Ensure 'Windows Firewal...bound connections' is set to 'Allow (default)' <1 second: false
+150/417: [def:3529890] (L1) Ensure 'Windows Firewal...ttings: Display a notification' is set to 'No' <1 second: false
+151/417: [def:3529894] (L1) Ensure 'Windows Firewal...Root%\System32\logfiles\firewall\domainfw.log' <1 second: false
+152/417: [def:3529897] (L1) Ensure 'Windows Firewal...e limit (KB)' is set to '16,384 KB or greater' <1 second: false
+153/417: [def:3529900] (L1) Ensure 'Windows Firewal... Logging: Log dropped packets' is set to 'Yes' <1 second: false
+154/417: [def:3529903] (L1) Ensure 'Windows Firewal...g: Log successful connections' is set to 'Yes' <1 second: false
+155/417: [def:3529906] (L1) Ensure 'Windows Firewal...: Firewall state' is set to 'On (recommended)' <1 second: false
+156/417: [def:3529910] (L1) Ensure 'Windows Firewal...bound connections' is set to 'Block (default)' <1 second: false
+157/417: [def:3529913] (L1) Ensure 'Windows Firewal...bound connections' is set to 'Allow (default)' <1 second: false
+158/417: [def:3529916] (L1) Ensure 'Windows Firewal...ttings: Display a notification' is set to 'No' <1 second: false
+159/417: [def:3529919] (L1) Ensure 'Windows Firewal...oot%\System32\logfiles\firewall\privatefw.log' <1 second: false
+160/417: [def:3529922] (L1) Ensure 'Windows Firewal...e limit (KB)' is set to '16,384 KB or greater' <1 second: false
+161/417: [def:3529925] (L1) Ensure 'Windows Firewal... Logging: Log dropped packets' is set to 'Yes' <1 second: false
+162/417: [def:3529928] (L1) Ensure 'Windows Firewal...g: Log successful connections' is set to 'Yes' <1 second: false
+163/417: [def:3529931] (L1) Ensure 'Windows Firewal...: Firewall state' is set to 'On (recommended)' <1 second: false
+164/417: [def:3529935] (L1) Ensure 'Windows Firewal...bound connections' is set to 'Block (default)' <1 second: false
+165/417: [def:3529939] (L1) Ensure 'Windows Firewal...bound connections' is set to 'Allow (default)' <1 second: false
+166/417: [def:3529944] (L1) Ensure 'Windows Firewal...ttings: Display a notification' is set to 'No' <1 second: false
+167/417: [def:3529949] (L1) Ensure 'Windows Firewal...gs: Apply local firewall rules' is set to 'No' <1 second: false
+168/417: [def:3529954] (L1) Ensure 'Windows Firewal...ocal connection security rules' is set to 'No' <1 second: false
+169/417: [def:3529959] (L1) Ensure 'Windows Firewal...Root%\System32\logfiles\firewall\publicfw.log' <1 second: false
+170/417: [def:3529964] (L1) Ensure 'Windows Firewal...e limit (KB)' is set to '16,384 KB or greater' <1 second: false
+171/417: [def:3529970] (L1) Ensure 'Windows Firewal... Logging: Log dropped packets' is set to 'Yes' <1 second: false
+172/417: [def:3529977] (L1) Ensure 'Windows Firewal...g: Log successful connections' is set to 'Yes' <1 second: false
+173/417: [def:3529940] (L1) Ensure 'Audit Credential Validation' is set to 'Success and Failure'.... <1 second: false
+174/417: [def:3529942] (L1) Ensure 'Audit Applicati...up Management' is set to 'Success and Failure' <1 second: false
+175/417: [def:3529945] (L1) Ensure 'Audit Security Group Management' is set to include 'Success'.... <1 second: true
+176/417: [def:3529947] (L1) Ensure 'Audit Security Group Management' is set to include 'Success'.... <1 second: false
+177/417: [def:3529951] (L1) Ensure 'Audit User Account Management' is set to 'Success and Failure'.. <1 second: false
+178/417: [def:3529955] (L1) Ensure 'Audit PNP Activity' is set to include 'Success'................. <1 second: false
+179/417: [def:3529956] (L1) Ensure 'Audit PNP Activity' is set to include 'Success'................. <1 second: false
+180/417: [def:3529960] (L1) Ensure 'Audit Process Creation' is set to include 'Success'............. <1 second: false
+181/417: [def:3529963] (L1) Ensure 'Audit Process Creation' is set to include 'Success'............. <1 second: false
+182/417: [def:3529966] (L1) Ensure 'Audit Account Lockout' is set to include 'Failure'.............. <1 second: false
+183/417: [def:3529969] (L1) Ensure 'Audit Account Lockout' is set to include 'Failure'.............. <1 second: false
+184/417: [def:3529973] (L1) Ensure 'Audit Group Membership' is set to include 'Success'............. <1 second: false
+185/417: [def:3529975] (L1) Ensure 'Audit Group Membership' is set to include 'Success'............. <1 second: false
+186/417: [def:3529979] (L1) Ensure 'Audit Logoff' is set to include 'Success'....................... <1 second: true
+187/417: [def:3529982] (L1) Ensure 'Audit Logoff' is set to include 'Success'....................... <1 second: false
+188/417: [def:3529985] (L1) Ensure 'Audit Logon' is set to 'Success and Failure'.................... <1 second: true
+189/417: [def:3529989] (L1) Ensure 'Audit Other Logon/Logoff Events' is set to 'Success and Failure' <1 second: false
+190/417: [def:3529994] (L1) Ensure 'Audit Special Logon' is set to include 'Success'................ <1 second: true
+191/417: [def:3529995] (L1) Ensure 'Audit Special Logon' is set to include 'Success'................ <1 second: false
+192/417: [def:3530000] (L1) Ensure 'Audit Detailed File Share' is set to include 'Failure'.......... <1 second: false
+193/417: [def:3530003] (L1) Ensure 'Audit Detailed File Share' is set to include 'Failure'.......... <1 second: false
+194/417: [def:3530006] (L1) Ensure 'Audit File Share' is set to 'Success and Failure'............... <1 second: false
+195/417: [def:3530010] (L1) Ensure 'Audit Other Obj...Access Events' is set to 'Success and Failure' <1 second: false
+196/417: [def:3530013] (L1) Ensure 'Audit Removable Storage' is set to 'Success and Failure'........ <1 second: false
+197/417: [def:3530017] (L1) Ensure 'Audit Audit Policy Change' is set to include 'Success'.......... <1 second: true
+198/417: [def:3530019] (L1) Ensure 'Audit Audit Policy Change' is set to include 'Success'.......... <1 second: false
+199/417: [def:3530023] (L1) Ensure 'Audit Authentication Policy Change' is set to include 'Success'. <1 second: true
+200/417: [def:3530024] (L1) Ensure 'Audit Authentication Policy Change' is set to include 'Success'. <1 second: false
+201/417: [def:3530029] (L1) Ensure 'Audit Authorization Policy Change' is set to include 'Success'.. <1 second: false
+202/417: [def:3530031] (L1) Ensure 'Audit Authorization Policy Change' is set to include 'Success'.. <1 second: false
+203/417: [def:3530035] (L1) Ensure 'Audit MPSSVC Ru...Policy Change' is set to 'Success and Failure' <1 second: false
+204/417: [def:3530037] (L1) Ensure 'Audit Other Policy Change Events' is set to include 'Failure'... <1 second: false
+205/417: [def:3530041] (L1) Ensure 'Audit Other Policy Change Events' is set to include 'Failure'... <1 second: false
+206/417: [def:3530043] (L1) Ensure 'Audit Sensitive Privilege Use' is set to 'Success and Failure'.. <1 second: false
+207/417: [def:3530048] (L1) Ensure 'Audit IPsec Driver' is set to 'Success and Failure'............. <1 second: false
+208/417: [def:3530051] (L1) Ensure 'Audit Other System Events' is set to 'Success and Failure'...... <1 second: true
+209/417: [def:3530055] (L1) Ensure 'Audit Security State Change' is set to include 'Success'........ <1 second: true
+210/417: [def:3530058] (L1) Ensure 'Audit Security State Change' is set to include 'Success'........ <1 second: false
+211/417: [def:3530061] (L1) Ensure 'Audit Security System Extension' is set to include 'Success'.... <1 second: false
+212/417: [def:3530064] (L1) Ensure 'Audit Security System Extension' is set to include 'Success'.... <1 second: false
+213/417: [def:3530068] (L1) Ensure 'Audit System Integrity' is set to 'Success and Failure'......... <1 second: true
+214/417: [def:3529965] (L1) Ensure 'Prevent enabling lock screen camera' is set to 'Enabled'........ <1 second: false
+215/417: [def:3529972] (L1) Ensure 'Prevent enabling lock screen slide show' is set to 'Enabled'.... <1 second: false
+216/417: [def:3529978] (L1) Ensure 'Allow users to ...ech recognition services' is set to 'Disabled' <1 second: false
+217/417: [def:3529991] (L1) Ensure LAPS AdmPwd GPO Extension / CSE is installed..................... <1 second: false
+218/417: [def:3529997] (L1) Ensure LAPS AdmPwd GPO Extension / CSE is installed..................... <1 second: false
+219/417: [def:3530004] (L1) Ensure 'Do not allow pa...r than required by policy' is set to 'Enabled' <1 second: false
+220/417: [def:3530008] (L1) Ensure 'Enable Local Admin Password Management' is set to 'Enabled'..... <1 second: false
+221/417: [def:3530014] (L1) Ensure 'Password Settin... small letters + numbers + special characters' <1 second: false
+222/417: [def:3530020] (L1) Ensure 'Password Settin...ssword Length' is set to 'Enabled: 15 or more' <1 second: false
+223/417: [def:3530027] (L1) Ensure 'Password Settin...d Age (Days)' is set to 'Enabled: 30 or fewer' <1 second: false
+224/417: [def:3530033] (L1) Ensure 'Apply UAC restr...ccounts on network logons' is set to 'Enabled' <1 second: false
+225/417: [def:3530040] (L1) Ensure 'Configure RPC p... for incoming connections' is set to 'Enabled' <1 second: false
+226/417: [def:3530053] (L1) Ensure 'Configure SMB v...set to 'Enabled: Disable driver (recommended)' <1 second: false
+227/417: [def:3530059] (L1) Ensure 'Configure SMB v1 server' is set to 'Disabled'................... <1 second: false
+228/417: [def:3530065] (L1) Ensure 'Enable Structur...rwrite Protection (SEHOP)' is set to 'Enabled' <1 second: false
+229/417: [def:3530071] (L1) Ensure 'LSA Protection' is set to 'Enabled'............................. <1 second: false
+230/417: [def:3530075] (L1) Ensure 'NetBT NodeType ...ion' is set to 'Enabled: P-node (recommended)' <1 second: false
+231/417: [def:3530078] (L1) Ensure 'WDigest Authentication' is set to 'Disabled'.................... <1 second: false
+232/417: [def:3530081] (L1) Ensure 'MSS: (AutoAdmin... Logon (not recommended)' is set to 'Disabled' <1 second: false
+233/417: [def:3530085] (L1) Ensure 'MSS: (AutoAdmin... Logon (not recommended)' is set to 'Disabled' <1 second: true
+234/417: [def:3530087] (L1) Ensure 'MSS: (DisableIP...ection, source routing is completely disabled' <1 second: false
+235/417: [def:3530089] (L1) Ensure 'MSS: (DisableIP...ection, source routing is completely disabled' <1 second: false
+236/417: [def:3530094] (L1) Ensure 'MSS: (EnableICM...de OSPF generated routes' is set to 'Disabled' <1 second: false
+237/417: [def:3530098] (L1) Ensure 'MSS: (NoNameRel... except from WINS servers' is set to 'Enabled' <1 second: false
+238/417: [def:3530102] (L1) Ensure 'MSS: (SafeDllSe...search mode (recommended)' is set to 'Enabled' <1 second: false
+239/417: [def:3530104] (L1) Ensure 'MSS: (ScreenSav...nded)' is set to 'Enabled: 5 or fewer seconds' <1 second: false
+240/417: [def:3530111] (L1) Ensure 'MSS: (WarningLe...te a warning' is set to 'Enabled: 90% or less' <1 second: false
+241/417: [def:3530117] (L1) Ensure 'Configure NetBI...le NetBIOS name resolution on public networks' <1 second: false
+242/417: [def:3530119] (L1) Ensure 'Configure NetBI...le NetBIOS name resolution on public networks' <1 second: false
+243/417: [def:3530121] (L1) Ensure 'Turn off multicast name resolution' is set to 'Enabled'......... <1 second: false
+244/417: [def:3530125] (L1) Ensure 'Enable insecure guest logons' is set to 'Disabled'.............. <1 second: false
+245/417: [def:3530140] (L1) Ensure 'Prohibit instal...n your DNS domain network' is set to 'Enabled' <1 second: false
+246/417: [def:3530141] (L1) Ensure 'Prohibit use of...n your DNS domain network' is set to 'Enabled' <1 second: false
+247/417: [def:3530142] (L1) Ensure 'Require domain ...ting a network's location' is set to 'Enabled' <1 second: false
+248/417: [def:3530143] (L1) Ensure 'Hardened UNC Pa...grity" set for all NETLOGON and SYSVOL shares' <1 second: false
+249/417: [def:3530144] (L1) Ensure 'Hardened UNC Pa...grity" set for all NETLOGON and SYSVOL shares' <1 second: false
+250/417: [def:3530152] (L1) Ensure 'Minimize the nu... 'Enabled: 3 = Prevent Wi-Fi when on Ethernet' <1 second: false
+251/417: [def:3530154] (L1) Ensure 'Prohibit connec...ain authenticated network' is set to 'Enabled' <1 second: false
+252/417: [def:3530155] (L1) Ensure 'Allow Windows t...s offering paid services' is set to 'Disabled' <1 second: false
+253/417: [def:3530156] (L1) Ensure 'Allow Print Spo...ccept client connections' is set to 'Disabled' <1 second: false
+254/417: [def:3530157] (L1) Ensure 'Configure Redir...is set to 'Enabled: Redirection Guard Enabled' <1 second: false
+255/417: [def:3530158] (L1) Ensure 'Configure RPC c...connections' is set to 'Enabled: RPC over TCP' <1 second: false
+256/417: [def:3530159] (L1) Ensure 'Configure RPC c... RPC connections' is set to 'Enabled: Default' <1 second: false
+257/417: [def:3530160] (L1) Ensure 'Configure RPC l...connections' is set to 'Enabled: RPC over TCP' <1 second: false
+258/417: [def:3530161] (L1) Ensure 'Configure RPC l...ons:' is set to 'Enabled: Negotiate' or higher <1 second: false
+259/417: [def:3530162] (L1) Ensure 'Configure RPC l...ons:' is set to 'Enabled: Negotiate' or higher <1 second: false
+260/417: [def:3530163] (L1) Ensure 'Configure RPC over TCP port' is set to 'Enabled: 0'............. <1 second: false
+261/417: [def:3530164] (L1) Ensure 'Limits print dr...llation to Administrators' is set to 'Enabled' <1 second: false
+262/417: [def:3530165] (L1) Ensure 'Manage processi... Limit Queue-specific files to Color profiles' <1 second: false
+263/417: [def:3530166] (L1) Ensure 'Point and Print...o 'Enabled: Show warning and elevation prompt' <1 second: false
+264/417: [def:3530167] (L1) Ensure 'Point and Print...o 'Enabled: Show warning and elevation prompt' <1 second: false
+265/417: [def:3530169] (L1) Ensure 'Include command...n process creation events' is set to 'Enabled' <1 second: false
+266/417: [def:3530170] (L1) Ensure 'Encryption Orac...on' is set to 'Enabled: Force Updated Clients' <1 second: false
+267/417: [def:3530171] (L1) Ensure 'Remote host all...on-exportable credentials' is set to 'Enabled' <1 second: false
+268/417: [def:3530197] (L1) Ensure 'Prevent device ...trieval from the Internet' is set to 'Enabled' <1 second: false
+269/417: [def:3530198] (L1) Ensure 'Boot-Start Driv... 'Enabled: Good, unknown and bad but critical' <1 second: false
+270/417: [def:3530199] (L1) Ensure 'Configure regis...kground processing' is set to 'Enabled: FALSE' <1 second: false
+271/417: [def:3530200] (L1) Ensure 'Configure regis...ts have not changed' is set to 'Enabled: TRUE' <1 second: false
+272/417: [def:3530201] (L1) Ensure 'Continue experiences on this device' is set to 'Disabled'....... <1 second: false
+273/417: [def:3530202] (L1) Ensure 'Turn off backgr... refresh of Group Policy' is set to 'Disabled' <1 second: true
+274/417: [def:3530204] (L1) Ensure 'Turn off downlo...f print drivers over HTTP' is set to 'Enabled' <1 second: false
+275/417: [def:3530208] (L1) Ensure 'Turn off Intern...d online ordering wizards' is set to 'Enabled' <1 second: false
+276/417: [def:3540278] (L1) Ensure 'Allow Custom SS... to be loaded into LSASS' is set to 'Disabled' <1 second: false
+277/417: [def:3530227] (L1) Ensure 'Block user from...ccount details on sign-in' is set to 'Enabled' <1 second: false
+278/417: [def:3530228] (L1) Ensure 'Do not display network selection UI' is set to 'Enabled'........ <1 second: false
+279/417: [def:3530229] (L1) Ensure 'Do not enumerat...n domain-joined computers' is set to 'Enabled' <1 second: false
+280/417: [def:3530230] (L1) Ensure 'Enumerate local... domain-joined computers' is set to 'Disabled' <1 second: false
+281/417: [def:3530231] (L1) Ensure 'Turn off app no...ations on the lock screen' is set to 'Enabled' <1 second: false
+282/417: [def:3530232] (L1) Ensure 'Turn off picture password sign-in' is set to 'Enabled'.......... <1 second: false
+283/417: [def:3530233] (L1) Ensure 'Turn on convenience PIN sign-in' is set to 'Disabled'........... <1 second: false
+284/417: [def:3530236] (L1) Ensure 'Allow network c...ted-standby (on battery)' is set to 'Disabled' <1 second: false
+285/417: [def:3530237] (L1) Ensure 'Allow network c...ted-standby (plugged in)' is set to 'Disabled' <1 second: false
+286/417: [def:3530240] (L1) Ensure 'Require a passw...mputer wakes (on battery)' is set to 'Enabled' <1 second: false
+287/417: [def:3530241] (L1) Ensure 'Require a passw...mputer wakes (plugged in)' is set to 'Enabled' <1 second: false
+288/417: [def:3530242] (L1) Ensure 'Configure Offer Remote Assistance' is set to 'Disabled'......... <1 second: false
+289/417: [def:3530243] (L1) Ensure 'Configure Solicited Remote Assistance' is set to 'Disabled'..... <1 second: false
+290/417: [def:3530244] (L1) Ensure 'Enable RPC Endp...per Client Authentication' is set to 'Enabled' <1 second: false
+291/417: [def:3530245] (L1) Ensure 'Restrict Unauth...PC clients' is set to 'Enabled: Authenticated' <1 second: false
+292/417: [def:3530252] (L1) Ensure 'Prevent non-adm...ing packaged Windows apps' is set to 'Enabled' <1 second: false
+293/417: [def:3530253] (L1) Ensure 'Let Windows app...tem is locked' is set to 'Enabled: Force Deny' <1 second: false
+294/417: [def:3530254] (L1) Ensure 'Allow Microsoft accounts to be optional' is set to 'Enabled'.... <1 second: false
+295/417: [def:3530256] (L1) Ensure 'Disallow Autoplay for non-volume devices' is set to 'Enabled'... <1 second: false
+296/417: [def:3530257] (L1) Ensure 'Set the default...'Enabled: Do not execute any autorun commands' <1 second: false
+297/417: [def:3530258] (L1) Ensure 'Turn off Autoplay' is set to 'Enabled: All drives'.............. <1 second: false
+298/417: [def:3530259] (L1) Ensure 'Configure enhanced anti-spoofing' is set to 'Enabled'........... <1 second: false
+299/417: [def:3530309] (L1) Ensure 'Turn off cloud ...mer account state content' is set to 'Enabled' <1 second: false
+300/417: [def:3530311] (L1) Ensure 'Turn off Microsoft consumer experiences' is set to 'Enabled'.... <1 second: false
+301/417: [def:3530312] (L1) Ensure 'Require pin for... to 'Enabled: First Time' OR 'Enabled: Always' <1 second: false
+302/417: [def:3530313] (L1) Ensure 'Require pin for... to 'Enabled: First Time' OR 'Enabled: Always' <1 second: false
+303/417: [def:3530314] (L1) Ensure 'Do not display the password reveal button' is set to 'Enabled'.. <1 second: false
+304/417: [def:3530315] (L1) Ensure 'Enumerate admin...or accounts on elevation' is set to 'Disabled' <1 second: false
+305/417: [def:3530316] (L1) Ensure 'Prevent the use...stions for local accounts' is set to 'Enabled' <1 second: false
+306/417: [def:3530317] (L1) Ensure 'Allow Diagnosti...)' or 'Enabled: Send required diagnostic data' <1 second: false
+307/417: [def:3530318] (L1) Ensure 'Allow Diagnosti...)' or 'Enabled: Send required diagnostic data' <1 second: false
+308/417: [def:3530320] (L1) Ensure 'Disable OneSettings Downloads' is set to 'Enabled'.............. <1 second: false
+309/417: [def:3530321] (L1) Ensure 'Do not show feedback notifications' is set to 'Enabled'......... <1 second: false
+310/417: [def:3530322] (L1) Ensure 'Enable OneSettings Auditing' is set to 'Enabled'................ <1 second: false
+311/417: [def:3530323] (L1) Ensure 'Limit Diagnostic Log Collection' is set to 'Enabled'............ <1 second: false
+312/417: [def:3530324] (L1) Ensure 'Limit Dump Collection' is set to 'Enabled'...................... <1 second: false
+313/417: [def:3530325] (L1) Ensure 'Toggle user control over Insider builds' is set to 'Disabled'... <1 second: false
+314/417: [def:3530326] (L1) Ensure 'Download Mode' is NOT set to 'Enabled: Internet'................ <1 second: false
+315/417: [def:3530327] (L1) Ensure 'Enable App Installer' is set to 'Disabled'...................... <1 second: false
+316/417: [def:3530328] (L1) Ensure 'Enable App Installer Experimental Features' is set to 'Disabled' <1 second: false
+317/417: [def:3530329] (L1) Ensure 'Enable App Installer Hash Override' is set to 'Disabled'........ <1 second: false
+318/417: [def:3530330] (L1) Ensure 'Enable App Inst...ms-appinstaller protocol' is set to 'Disabled' <1 second: false
+319/417: [def:3530392] (L1) Ensure 'Application: Co...reaches its maximum size' is set to 'Disabled' <1 second: false
+320/417: [def:3530393] (L1) Ensure 'Application: Sp...e (KB)' is set to 'Enabled: 32,768 or greater' <1 second: false
+321/417: [def:3530394] (L1) Ensure 'Security: Contr...reaches its maximum size' is set to 'Disabled' <1 second: false
+322/417: [def:3530395] (L1) Ensure 'Security: Speci... (KB)' is set to 'Enabled: 196,608 or greater' <1 second: false
+323/417: [def:3530396] (L1) Ensure 'Setup: Control ...reaches its maximum size' is set to 'Disabled' <1 second: false
+324/417: [def:3530397] (L1) Ensure 'Setup: Specify ...e (KB)' is set to 'Enabled: 32,768 or greater' <1 second: false
+325/417: [def:3530398] (L1) Ensure 'System: Control...reaches its maximum size' is set to 'Disabled' <1 second: false
+326/417: [def:3530399] (L1) Ensure 'System: Specify...e (KB)' is set to 'Enabled: 32,768 or greater' <1 second: false
+327/417: [def:3530400] (L1) Ensure 'Turn off Data E... Prevention for Explorer' is set to 'Disabled' <1 second: false
+328/417: [def:3530402] (L1) Ensure 'Turn off heap termination on corruption' is set to 'Disabled'... <1 second: false
+329/417: [def:3530403] (L1) Ensure 'Turn off shell protocol protected mode' is set to 'Disabled'.... <1 second: false
+330/417: [def:3530404] (L1) Ensure 'Prevent the com... from joining a homegroup' is set to 'Enabled' <1 second: false
+331/417: [def:3530405] (L1) 'Disable Internet Explo...tandalone browser' is set to 'Enabled: Always' <1 second: false
+332/417: [def:3530409] (L1) Ensure 'Block all consu...count user authentication' is set to 'Enabled' <1 second: false
+333/417: [def:3530410] (L1) Ensure 'Configure local...orting to Microsoft MAPS' is set to 'Disabled' <1 second: false
+334/417: [def:3530413] (L1) Ensure 'Configure Attack Surface Reduction rules' is set to 'Enabled'... <1 second: false
+335/417: [def:3530414] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+336/417: [def:3530415] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+337/417: [def:3530416] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+338/417: [def:3530417] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+339/417: [def:3530418] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+340/417: [def:3530419] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+341/417: [def:3530420] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+342/417: [def:3530421] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+343/417: [def:3530422] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+344/417: [def:3530423] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+345/417: [def:3530424] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+346/417: [def:3530425] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+347/417: [def:3530426] (L1) Ensure 'Configure Attac...Set the state for each ASR rule' is configured <1 second: false
+348/417: [def:3530427] (L1) Ensure 'Prevent users a...dangerous websites' is set to 'Enabled: Block' <1 second: false
+349/417: [def:3530429] (L1) Ensure 'Scan all downloaded files and attachments' is set to 'Enabled'.. <1 second: false
+350/417: [def:3530430] (L1) Ensure 'Turn off real-time protection' is set to 'Disabled'............. <1 second: false
+351/417: [def:3530431] (L1) Ensure 'Turn on behavior monitoring' is set to 'Enabled'................ <1 second: false
+352/417: [def:3530432] (L1) Ensure 'Turn on script scanning' is set to 'Enabled'.................... <1 second: false
+353/417: [def:3530434] (L1) Ensure 'Scan removable drives' is set to 'Enabled'...................... <1 second: false
+354/417: [def:3530435] (L1) Ensure 'Turn on e-mail scanning' is set to 'Enabled'.................... <1 second: false
+355/417: [def:3530436] (L1) Ensure 'Configure detec...anted applications' is set to 'Enabled: Block' <1 second: false
+356/417: [def:3530437] (L1) Ensure 'Turn off Microsoft Defender AntiVirus' is set to 'Disabled'..... <1 second: false
+357/417: [def:3530451] (L1) Ensure 'Prevent the usa...OneDrive for file storage' is set to 'Enabled' <1 second: false
+358/417: [def:3530455] (L1) Ensure 'Do not allow passwords to be saved' is set to 'Enabled'......... <1 second: false
+359/417: [def:3530459] (L1) Ensure 'Do not allow drive redirection' is set to 'Enabled'............. <1 second: false
+360/417: [def:3530464] (L1) Ensure 'Always prompt for password upon connection' is set to 'Enabled'. <1 second: false
+361/417: [def:3530465] (L1) Ensure 'Require secure RPC communication' is set to 'Enabled'........... <1 second: false
+362/417: [def:3530466] (L1) Ensure 'Require use of ...te (RDP) connections' is set to 'Enabled: SSL' <1 second: false
+363/417: [def:3530467] (L1) Ensure 'Require user au...work Level Authentication' is set to 'Enabled' <1 second: false
+364/417: [def:3530468] (L1) Ensure 'Set client conn...ryption level' is set to 'Enabled: High Level' <1 second: false
+365/417: [def:3530472] (L1) Ensure 'Do not delete temp folders upon exit' is set to 'Disabled'...... <1 second: false
+366/417: [def:3530473] (L1) Ensure 'Prevent downloading of enclosures' is set to 'Enabled'.......... <1 second: false
+367/417: [def:3530476] (L1) Ensure 'Allow Cortana' is set to 'Disabled'............................. <1 second: false
+368/417: [def:3530477] (L1) Ensure 'Allow Cortana above lock screen' is set to 'Disabled'........... <1 second: false
+369/417: [def:3530478] (L1) Ensure 'Allow indexing of encrypted files' is set to 'Disabled'......... <1 second: false
+370/417: [def:3530479] (L1) Ensure 'Allow search and Cortana to use location' is set to 'Disabled'.. <1 second: false
+371/417: [def:3530484] (L1) Ensure 'Only display th...ithin the Microsoft Store' is set to 'Enabled' <1 second: false
+372/417: [def:3530485] (L1) Ensure 'Turn off Automa...d and Install of updates' is set to 'Disabled' <1 second: false
+373/417: [def:3530486] (L1) Ensure 'Turn off the of...latest version of Windows' is set to 'Enabled' <1 second: false
+374/417: [def:3530488] (L1) Ensure 'Allow widgets' is set to 'Disabled'............................. <1 second: false
+375/417: [def:3530494] (L1) Ensure 'Configure Windo...' is set to 'Enabled: Warn and prevent bypass' <1 second: false
+376/417: [def:3530493] (L1) Ensure 'Configure Windo...' is set to 'Enabled: Warn and prevent bypass' <1 second: false
+377/417: [def:3530495] (L1) Ensure 'Configure Windows Defender SmartScreen' is set to 'Enabled'..... <1 second: false
+378/417: [def:3530496] (L1) Ensure 'Prevent bypassi...tScreen prompts for sites' is set to 'Enabled' <1 second: false
+379/417: [def:3530499] (L1) Ensure 'Enables or disa...cording and Broadcasting' is set to 'Disabled' <1 second: false
+380/417: [def:3530502] (L1) Ensure 'Allow Windows I...llow access above lock' OR 'Enabled: Disabled' <1 second: false
+381/417: [def:3530503] (L1) Ensure 'Allow Windows I...llow access above lock' OR 'Enabled: Disabled' <1 second: false
+382/417: [def:3530504] (L1) Ensure 'Allow user control over installs' is set to 'Disabled'.......... <1 second: false
+383/417: [def:3530505] (L1) Ensure 'Always install with elevated privileges' is set to 'Disabled'... <1 second: false
+384/417: [def:3530507] (L1) Ensure 'Enable MPR notifications for the system' is set to 'Disabled'... <1 second: false
+385/417: [def:3530508] (L1) Ensure 'Sign-in and loc...atically after a restart' is set to 'Disabled' <1 second: false
+386/417: [def:3530509] (L1) Ensure 'Turn on PowerShell Script Block Logging' is set to 'Enabled'.... <1 second: false
+387/417: [def:3530510] (L1) Ensure 'Turn on PowerShell Transcription' is set to 'Enabled'........... <1 second: false
+388/417: [def:3530511] (L1) Ensure 'Allow Basic authentication' is set to 'Disabled'................ <1 second: false
+389/417: [def:3530512] (L1) Ensure 'Allow unencrypted traffic' is set to 'Disabled'................. <1 second: false
+390/417: [def:3530513] (L1) Ensure 'Disallow Digest authentication' is set to 'Enabled'............. <1 second: false
+391/417: [def:3530514] (L1) Ensure 'Allow Basic authentication' is set to 'Disabled'................ <1 second: false
+392/417: [def:3530516] (L1) Ensure 'Allow unencrypted traffic' is set to 'Disabled'................. <1 second: false
+393/417: [def:3530517] (L1) Ensure 'Disallow WinRM ...storing RunAs credentials' is set to 'Enabled' <1 second: false
+394/417: [def:3530519] (L1) Ensure 'Allow clipboard...ing with Windows Sandbox' is set to 'Disabled' <1 second: false
+395/417: [def:3530520] (L1) Ensure 'Allow networking in Windows Sandbox' is set to 'Disabled'....... <1 second: false
+396/417: [def:3530521] (L1) Ensure 'Prevent users from modifying settings' is set to 'Enabled'...... <1 second: false
+397/417: [def:3530524] (L1) Ensure 'No auto-restart...ic updates installations' is set to 'Disabled' <1 second: false
+398/417: [def:3530527] (L1) Ensure 'Configure Automatic Updates' is set to 'Enabled'................ <1 second: false
+399/417: [def:3530528] (L1) Ensure 'Configure Autom...heduled install day' is set to '0 - Every day' <1 second: false
+400/417: [def:3530529] (L1) Ensure 'Remove access to “Pause updates” feature' is set to 'Enabled'... <1 second: false
+401/417: [def:3530530] (L1) Ensure 'Manage preview builds' is set to 'Disabled'..................... <1 second: false
+402/417: [def:3530531] (L1) Ensure 'Select when Pre...eceived' is set to 'Enabled: 180 or more days' <1 second: false
+403/417: [def:3530532] (L1) Ensure 'Select when Pre...eceived' is set to 'Enabled: 180 or more days' <1 second: false
+404/417: [def:3530533] (L1) Ensure 'Select when Qua...ates are received' is set to 'Enabled: 0 days' <1 second: false
+405/417: [def:3530534] (L1) Ensure 'Select when Qua...ates are received' is set to 'Enabled: 0 days' <1 second: false
+406/417: [def:3529986] (L1) Ensure 'Enable screen saver' is set to 'Enabled'........................ <1 second: false
+407/417: [def:3529990] (L1) Ensure 'Password protect the screen saver' is set to 'Enabled'.......... <1 second: false
+408/417: [def:3529998] (L1) Ensure 'Screen saver ti... to 'Enabled: 900 seconds or fewer, but not 0' <1 second: false
+409/417: [def:3530002] (L1) Ensure 'Screen saver ti... to 'Enabled: 900 seconds or fewer, but not 0' <1 second: false
+410/417: [def:3530009] (L1) Ensure 'Turn off toast ...ations on the lock screen' is set to 'Enabled' <1 second: false
+411/417: [def:3530026] (L1) Ensure 'Do not preserve...tion in file attachments' is set to 'Disabled' <1 second: false
+412/417: [def:3530032] (L1) Ensure 'Notify antiviru... when opening attachments' is set to 'Enabled' <1 second: false
+413/417: [def:3530038] (L1) Ensure 'Configure Windows spotlight on lock screen' is set to Disabled'. <1 second: false
+414/417: [def:3530044] (L1) Ensure 'Do not suggest ...tent in Windows spotlight' is set to 'Enabled' <1 second: false
+415/417: [def:3530062] (L1) Ensure 'Turn off Spotlight collection on Desktop' is set to 'Enabled'... <1 second: false
+416/417: [def:3530072] (L1) Ensure 'Prevent users f...les within their profile.' is set to 'Enabled' <1 second: false
+417/417: [def:3530079] (L1) Ensure 'Always install with elevated privileges' is set to 'Disabled'... <1 second: false
+- Generating OVAL Results
+- Resolving Values.................................................................................. <1 second: Done
+
+- Collecting 0 System Characteristics
+
+- System Characteristics Collection: <1 second
+
+- Evaluating Definitions
+- Generating OVAL Results
+OVAL Definitions assessment complete.
+
+- Evaluating Checklist Rules
+01/527: (L1) Ensure 'Enforce password history' is set to '24 or more password(s)'................... Fail
+02/527: (L1) Ensure 'Maximum password age' is set to '365 or fewer days, but not 0'................. Pass
+03/527: (L1) Ensure 'Minimum password age' is set to '1 or more day(s)'............................. Fail
+04/527: (L1) Ensure 'Minimum password length' is set to '14 or more character(s)'................... Fail
+05/527: (L1) Ensure 'Password must meet complexity requirements' is set to 'Enabled'................ Fail
+06/527: (L1) Ensure 'Relax minimum password length limits' is set to 'Enabled'...................... Fail
+07/527: (L1) Ensure 'Store passwords using reversible encryption' is set to 'Disabled'.............. Pass
+08/527: (L1) Ensure 'Account lockout duration' is set to '15 or more minute(s)'..................... Pass
+09/527: (L1) Ensure 'Account lockout threshold' is ... or fewer invalid logon attempt(s), but not 0' Fail
+10/527: (L1) Ensure 'Allow Administrator account lockout' is set to 'Enabled'....................... Not Checked
+11/527: (L1) Ensure 'Reset account lockout counter after' is set to '15 or more minute(s)'.......... Pass
+12/527: (L1) Ensure 'Access Credential Manager as a trusted caller' is set to 'No One'.............. Pass
+13/527: (L1) Ensure 'Access this computer from the ... set to 'Administrators, Remote Desktop Users' Fail
+14/527: (L1) Ensure 'Act as part of the operating system' is set to 'No One'........................ Pass
+15/527: (L1) Ensure 'Adjust memory quotas for a pro...dministrators, LOCAL SERVICE, NETWORK SERVICE' Fail
+16/527: (L1) Ensure 'Allow log on locally' is set to 'Administrators, Users'........................ Fail
+17/527: (L1) Ensure 'Allow log on through Remote De... set to 'Administrators, Remote Desktop Users' Pass
+18/527: (L1) Ensure 'Back up files and directories' is set to 'Administrators'...................... Fail
+19/527: (L1) Ensure 'Change the system time' is set to 'Administrators, LOCAL SERVICE'.............. Pass
+20/527: (L1) Ensure 'Change the time zone' is set to 'Administrators, LOCAL SERVICE, Users'......... Pass
+21/527: (L1) Ensure 'Create a pagefile' is set to 'Administrators'.................................. Pass
+22/527: (L1) Ensure 'Create a token object' is set to 'No One'...................................... Pass
+23/527: (L1) Ensure 'Create global objects' is set ...tors, LOCAL SERVICE, NETWORK SERVICE, SERVICE' Pass
+24/527: (L1) Ensure 'Create permanent shared objects' is set to 'No One'............................ Pass
+25/527: (L1) Configure 'Create symbolic links'...................................................... Pass
+26/527: (L1) Ensure 'Debug programs' is set to 'Administrators'..................................... Pass
+27/527: (L1) Ensure 'Deny access to this computer f...he network' to include 'Guests, Local account' Fail
+28/527: (L1) Ensure 'Deny log on as a batch job' to include 'Guests'................................ Fail
+29/527: (L1) Ensure 'Deny log on as a service' to include 'Guests'.................................. Fail
+30/527: (L1) Ensure 'Deny log on locally' to include 'Guests'....................................... Fail
+31/527: (L1) Ensure 'Deny log on through Remote Desktop Services' to include 'Guests, Local account' Fail
+32/527: (L1) Ensure 'Enable computer and user accou... be trusted for delegation' is set to 'No One' Pass
+33/527: (L1) Ensure 'Force shutdown from a remote system' is set to 'Administrators'................ Pass
+34/527: (L1) Ensure 'Generate security audits' is set to 'LOCAL SERVICE, NETWORK SERVICE'........... Pass
+35/527: (L1) Ensure 'Impersonate a client after aut...tors, LOCAL SERVICE, NETWORK SERVICE, SERVICE' Pass
+36/527: (L1) Ensure 'Increase scheduling priority' ...strators, Window Manager\Window Manager Group' Pass
+37/527: (L1) Ensure 'Load and unload device drivers' is set to 'Administrators'..................... Pass
+38/527: (L1) Ensure 'Lock pages in memory' is set to 'No One'....................................... Pass
+39/527: (L2) Ensure 'Log on as a batch job' is set to 'Administrators'.............................. Not Selected
+40/527: (L2) Configure 'Log on as a service'........................................................ Not Selected
+41/527: (L1) Ensure 'Manage auditing and security log' is set to 'Administrators'................... Pass
+42/527: (L1) Ensure 'Modify an object label' is set to 'No One'..................................... Pass
+43/527: (L1) Ensure 'Modify firmware environment values' is set to 'Administrators'................. Pass
+44/527: (L1) Ensure 'Perform volume maintenance tasks' is set to 'Administrators'................... Fail
+45/527: (L1) Ensure 'Profile single process' is set to 'Administrators'............................. Pass
+46/527: (L1) Ensure 'Profile system performance' is...to 'Administrators, NT SERVICE\WdiServiceHost' Pass
+47/527: (L1) Ensure 'Replace a process level token' is set to 'LOCAL SERVICE, NETWORK SERVICE'...... Fail
+48/527: (L1) Ensure 'Restore files and directories' is set to 'Administrators'...................... Fail
+49/527: (L1) Ensure 'Shut down the system' is set to 'Administrators, Users'........................ Fail
+50/527: (L1) Ensure 'Take ownership of files or other objects' is set to 'Administrators'........... Pass
+51/527: (L1) Ensure 'Accounts: Block Microsoft acco...s can't add or log on with Microsoft accounts' Fail
+52/527: (L1) Ensure 'Accounts: Guest account status' is set to 'Disabled'........................... Pass
+53/527: (L1) Ensure 'Accounts: Limit local account ...rds to console logon only' is set to 'Enabled' Pass
+54/527: (L1) Configure 'Accounts: Rename administrator account'..................................... Pass
+55/527: (L1) Configure 'Accounts: Rename guest account'............................................. Pass
+56/527: (L1) Ensure 'Audit: Force audit policy subc... policy category settings' is set to 'Enabled' Fail
+57/527: (L1) Ensure 'Audit: Shut down system immedi...e to log security audits' is set to 'Disabled' Pass
+58/527: (L1) Ensure 'Devices: Allowed to format and... set to 'Administrators and Interactive Users' Fail
+59/527: (L2) Ensure 'Devices: Prevent users from installing printer drivers' is set to 'Enabled'.... Not Selected
+60/527: (L1) Ensure 'Domain member: Digitally encry...ure channel data (always)' is set to 'Enabled' Pass
+61/527: (L1) Ensure 'Domain member: Digitally encry...nnel data (when possible)' is set to 'Enabled' Pass
+62/527: (L1) Ensure 'Domain member: Digitally sign ...nnel data (when possible)' is set to 'Enabled' Pass
+63/527: (L1) Ensure 'Domain member: Disable machine account password changes' is set to 'Disabled'.. Pass
+64/527: (L1) Ensure 'Domain member: Maximum machine...d age' is set to '30 or fewer days, but not 0' Pass
+65/527: (L1) Ensure 'Domain member: Require strong ...000 or later) session key' is set to 'Enabled' Pass
+66/527: (L1) Ensure 'Interactive logon: Do not require CTRL+ALT+DEL' is set to 'Disabled'........... Fail
+67/527: (L1) Ensure 'Interactive logon: Don't display last signed-in' is set to 'Enabled'........... Fail
+68/527: (BL) Ensure 'Interactive logon: Machine acc...10 or fewer invalid logon attempts, but not 0' Not Selected
+69/527: (L1) Ensure 'Interactive logon: Machine ina... is set to '900 or fewer second(s), but not 0' Fail
+70/527: (L1) Configure 'Interactive logon: Message text for users attempting to log on'............. Fail
+71/527: (L1) Configure 'Interactive logon: Message title for users attempting to log on'............ Fail
+72/527: (L2) Ensure 'Interactive logon: Number of p...ot available)' is set to '4 or fewer logon(s)' Not Selected
+73/527: (L1) Ensure 'Interactive logon: Prompt user... expiration' is set to 'between 5 and 14 days' Pass
+74/527: (L1) Ensure 'Interactive logon: Smart card ...havior' is set to 'Lock Workstation' or higher Fail
+75/527: (L1) Ensure 'Microsoft network client: Digi...n communications (always)' is set to 'Enabled' Fail
+76/527: (L1) Ensure 'Microsoft network client: Digi...ations (if server agrees)' is set to 'Enabled' Pass
+77/527: (L1) Ensure 'Microsoft network client: Send... third-party SMB servers' is set to 'Disabled' Pass
+78/527: (L1) Ensure 'Microsoft network server: Amou...ing session' is set to '15 or fewer minute(s)' Pass
+79/527: (L1) Ensure 'Microsoft network server: Digi...n communications (always)' is set to 'Enabled' Fail
+80/527: (L1) Ensure 'Microsoft network server: Digi...ations (if client agrees)' is set to 'Enabled' Fail
+81/527: (L1) Ensure 'Microsoft network server: Disc...s when logon hours expire' is set to 'Enabled' Pass
+82/527: (L1) Ensure 'Microsoft network server: Serv...et to 'Accept if provided by client' or higher Fail
+83/527: (L1) Ensure 'Network access: Allow anonymous SID/Name translation' is set to 'Disabled'..... Pass
+84/527: (L1) Ensure 'Network access: Do not allow a...umeration of SAM accounts' is set to 'Enabled' Pass
+85/527: (L1) Ensure 'Network access: Do not allow a...f SAM accounts and shares' is set to 'Enabled' Fail
+86/527: (L1) Ensure 'Network access: Do not allow s...or network authentication' is set to 'Enabled' Fail
+87/527: (L1) Ensure 'Network access: Let Everyone p...apply to anonymous users' is set to 'Disabled' Pass
+88/527: (L1) Ensure 'Network access: Named Pipes that can be accessed anonymously' is set to 'None'. Pass
+89/527: (L1) Ensure 'Network access: Remotely accessible registry paths' is configured.............. Pass
+90/527: (L1) Ensure 'Network access: Remotely accessible registry paths and sub-paths' is configured Pass
+91/527: (L1) Ensure 'Network access: Restrict anony...to Named Pipes and Shares' is set to 'Enabled' Pass
+92/527: (L1) Ensure 'Network access: Restrict clien... set to 'Administrators: Remote Access: Allow' Fail
+93/527: (L1) Ensure 'Network access: Shares that can be accessed anonymously' is set to 'None'...... Pass
+94/527: (L1) Ensure 'Network access: Sharing and se...ssic - local users authenticate as themselves' Pass
+95/527: (L1) Ensure 'Network security: Allow Local ...omputer identity for NTLM' is set to 'Enabled' Fail
+96/527: (L1) Ensure 'Network security: Allow LocalSystem NULL session fallback' is set to 'Disabled' Fail
+97/527: (L1) Ensure 'Network Security: Allow PKU2U ...to use online identities' is set to 'Disabled' Fail
+98/527: (L1) Ensure 'Network security: Configure en...A1, AES256_HMAC_SHA1, Future encryption types' Fail
+99/527: (L1) Ensure 'Network security: Do not store...e on next password change' is set to 'Enabled' Pass
+100/527: (L1) Ensure 'Network security: Force logoff when logon hours expire' is set to 'Enabled'... Not Checked
+101/527: (L1) Ensure 'Network security: LAN Manager... 'Send NTLMv2 response only. Refuse LM & NTLM' Fail
+102/527: (L1) Ensure 'Network security: LDAP client...ments' is set to 'Negotiate signing' or higher Pass
+103/527: (L1) Ensure 'Network security: Minimum ses... session security, Require 128-bit encryption' Fail
+104/527: (L1) Ensure 'Network security: Minimum ses... session security, Require 128-bit encryption' Fail
+105/527: (L2) Ensure 'System cryptography: Force st...prompted when the key is first used' or higher Not Selected
+106/527: (L1) Ensure 'System objects: Require case ...or non-Windows subsystems' is set to 'Enabled' Pass
+107/527: (L1) Ensure 'System objects: Strengthen de...cts (e.g. Symbolic Links)' is set to 'Enabled' Pass
+108/527: (L1) Ensure 'User Account Control: Admin A...-in Administrator account' is set to 'Enabled' Fail
+109/527: (L1) Ensure 'User Account Control: Behavio...t for consent on the secure desktop' or higher Fail
+110/527: (L1) Ensure 'User Account Control: Behavio...set to 'Automatically deny elevation requests' Fail
+111/527: (L1) Ensure 'User Account Control: Detect ... and prompt for elevation' is set to 'Enabled' Pass
+112/527: (L1) Ensure 'User Account Control: Only el...alled in secure locations' is set to 'Enabled' Pass
+113/527: (L1) Ensure 'User Account Control: Run all...rs in Admin Approval Mode' is set to 'Enabled' Pass
+114/527: (L1) Ensure 'User Account Control: Switch ...n prompting for elevation' is set to 'Enabled' Pass
+115/527: (L1) Ensure 'User Account Control: Virtual...res to per-user locations' is set to 'Enabled' Pass
+116/527: (L2) Ensure 'Bluetooth Audio Gateway Service (BTAGService)' is set to 'Disabled'........... Not Selected
+117/527: (L2) Ensure 'Bluetooth Support Service (bthserv)' is set to 'Disabled'..................... Not Selected
+118/527: (L1) Ensure 'Computer Browser (Browser)' is set to 'Disabled' or 'Not Installed'........... Pass
+119/527: (L2) Ensure 'Downloaded Maps Manager (MapsBroker)' is set to 'Disabled'.................... Not Selected
+120/527: (L2) Ensure 'Geolocation Service (lfsvc)' is set to 'Disabled'............................. Not Selected
+121/527: (L1) Ensure 'IIS Admin Service (IISADMIN)' is set to 'Disabled' or 'Not Installed'......... Pass
+122/527: (L1) Ensure 'Infrared monitor service (irmon)' is set to 'Disabled' or 'Not Installed'..... Pass
+123/527: (L1) Ensure 'Internet Connection Sharing (ICS) (SharedAccess)' is set to 'Disabled'........ Fail
+124/527: (L2) Ensure 'Link-Layer Topology Discovery Mapper (lltdsvc)' is set to 'Disabled'.......... Not Selected
+125/527: (L1) Ensure 'LxssManager (LxssManager)' is set to 'Disabled' or 'Not Installed'............ Pass
+126/527: (L1) Ensure 'Microsoft FTP Service (FTPSVC)' is set to 'Disabled' or 'Not Installed'....... Pass
+127/527: (L2) Ensure 'Microsoft iSCSI Initiator Service (MSiSCSI)' is set to 'Disabled'............. Not Selected
+128/527: (L1) Ensure 'OpenSSH SSH Server (sshd)' is set to 'Disabled' or 'Not Installed'............ Pass
+129/527: (L2) Ensure 'Peer Name Resolution Protocol (PNRPsvc)' is set to 'Disabled'................. Not Selected
+130/527: (L2) Ensure 'Peer Networking Grouping (p2psvc)' is set to 'Disabled'....................... Not Selected
+131/527: (L2) Ensure 'Peer Networking Identity Manager (p2pimsvc)' is set to 'Disabled'............. Not Selected
+132/527: (L2) Ensure 'PNRP Machine Name Publication Service (PNRPAutoReg)' is set to 'Disabled'..... Not Selected
+133/527: (L2) Ensure 'Print Spooler (Spooler)' is set to 'Disabled'................................. Not Selected
+134/527: (L2) Ensure 'Problem Reports and Solutions... Support (wercplsupport)' is set to 'Disabled' Not Selected
+135/527: (L2) Ensure 'Remote Access Auto Connection Manager (RasAuto)' is set to 'Disabled'......... Not Selected
+136/527: (L2) Ensure 'Remote Desktop Configuration (SessionEnv)' is set to 'Disabled'............... Not Selected
+137/527: (L2) Ensure 'Remote Desktop Services (TermService)' is set to 'Disabled'................... Not Selected
+138/527: (L2) Ensure 'Remote Desktop Services UserM...edirector (UmRdpService)' is set to 'Disabled' Not Selected
+139/527: (L1) Ensure 'Remote Procedure Call (RPC) Locator (RpcLocator)' is set to 'Disabled'........ Fail
+140/527: (L2) Ensure 'Remote Registry (RemoteRegistry)' is set to 'Disabled'........................ Not Selected
+141/527: (L1) Ensure 'Routing and Remote Access (RemoteAccess)' is set to 'Disabled'................ Pass
+142/527: (L2) Ensure 'Server (LanmanServer)' is set to 'Disabled'................................... Not Selected
+143/527: (L1) Ensure 'Simple TCP/IP Services (simptcp)' is set to 'Disabled' or 'Not Installed'..... Pass
+144/527: (L2) Ensure 'SNMP Service (SNMP)' is set to 'Disabled' or 'Not Installed'.................. Not Selected
+145/527: (L1) Ensure 'Special Administration Consol...csvr)' is set to 'Disabled' or 'Not Installed' Pass
+146/527: (L1) Ensure 'SSDP Discovery (SSDPSRV)' is set to 'Disabled'................................ Fail
+147/527: (L1) Ensure 'UPnP Device Host (upnphost)' is set to 'Disabled'............................. Fail
+148/527: (L1) Ensure 'Web Management Service (WMSvc)' is set to 'Disabled' or 'Not Installed'....... Pass
+149/527: (L2) Ensure 'Windows Error Reporting Service (WerSvc)' is set to 'Disabled'................ Not Selected
+150/527: (L2) Ensure 'Windows Event Collector (Wecsvc)' is set to 'Disabled'........................ Not Selected
+151/527: (L1) Ensure 'Windows Media Player Network ...kSvc)' is set to 'Disabled' or 'Not Installed' Fail
+152/527: (L1) Ensure 'Windows Mobile Hotspot Service (icssvc)' is set to 'Disabled'................. Fail
+153/527: (L2) Ensure 'Windows Push Notifications System Service (WpnService)' is set to 'Disabled'.. Not Selected
+154/527: (L2) Ensure 'Windows PushToInstall Service (PushToInstall)' is set to 'Disabled'........... Not Selected
+155/527: (L2) Ensure 'Windows Remote Management (WS-Management) (WinRM)' is set to 'Disabled'....... Not Selected
+156/527: (L1) Ensure 'World Wide Web Publishing Ser...3SVC)' is set to 'Disabled' or 'Not Installed' Pass
+157/527: (L1) Ensure 'Xbox Accessory Management Service (XboxGipSvc)' is set to 'Disabled'.......... Fail
+158/527: (L1) Ensure 'Xbox Live Auth Manager (XblAuthManager)' is set to 'Disabled'................. Fail
+159/527: (L1) Ensure 'Xbox Live Game Save (XblGameSave)' is set to 'Disabled'....................... Fail
+160/527: (L1) Ensure 'Xbox Live Networking Service (XboxNetApiSvc)' is set to 'Disabled'............ Fail
+161/527: (L1) Ensure 'Windows Firewall: Domain: Firewall state' is set to 'On (recommended)'........ Fail
+162/527: (L1) Ensure 'Windows Firewall: Domain: Inbound connections' is set to 'Block (default)'.... Fail
+163/527: (L1) Ensure 'Windows Firewall: Domain: Outbound connections' is set to 'Allow (default)'... Fail
+164/527: (L1) Ensure 'Windows Firewall: Domain: Settings: Display a notification' is set to 'No'.... Fail
+165/527: (L1) Ensure 'Windows Firewall: Domain: Log...Root%\System32\logfiles\firewall\domainfw.log' Fail
+166/527: (L1) Ensure 'Windows Firewall: Domain: Log...e limit (KB)' is set to '16,384 KB or greater' Fail
+167/527: (L1) Ensure 'Windows Firewall: Domain: Logging: Log dropped packets' is set to 'Yes'....... Fail
+168/527: (L1) Ensure 'Windows Firewall: Domain: Logging: Log successful connections' is set to 'Yes' Fail
+169/527: (L1) Ensure 'Windows Firewall: Private: Firewall state' is set to 'On (recommended)'....... Fail
+170/527: (L1) Ensure 'Windows Firewall: Private: Inbound connections' is set to 'Block (default)'... Fail
+171/527: (L1) Ensure 'Windows Firewall: Private: Outbound connections' is set to 'Allow (default)'.. Fail
+172/527: (L1) Ensure 'Windows Firewall: Private: Settings: Display a notification' is set to 'No'... Fail
+173/527: (L1) Ensure 'Windows Firewall: Private: Lo...oot%\System32\logfiles\firewall\privatefw.log' Fail
+174/527: (L1) Ensure 'Windows Firewall: Private: Lo...e limit (KB)' is set to '16,384 KB or greater' Fail
+175/527: (L1) Ensure 'Windows Firewall: Private: Logging: Log dropped packets' is set to 'Yes'...... Fail
+176/527: (L1) Ensure 'Windows Firewall: Private: Lo...g: Log successful connections' is set to 'Yes' Fail
+177/527: (L1) Ensure 'Windows Firewall: Public: Firewall state' is set to 'On (recommended)'........ Fail
+178/527: (L1) Ensure 'Windows Firewall: Public: Inbound connections' is set to 'Block (default)'.... Fail
+179/527: (L1) Ensure 'Windows Firewall: Public: Outbound connections' is set to 'Allow (default)'... Fail
+180/527: (L1) Ensure 'Windows Firewall: Public: Settings: Display a notification' is set to 'No'.... Fail
+181/527: (L1) Ensure 'Windows Firewall: Public: Settings: Apply local firewall rules' is set to 'No' Fail
+182/527: (L1) Ensure 'Windows Firewall: Public: Set...ocal connection security rules' is set to 'No' Fail
+183/527: (L1) Ensure 'Windows Firewall: Public: Log...Root%\System32\logfiles\firewall\publicfw.log' Fail
+184/527: (L1) Ensure 'Windows Firewall: Public: Log...e limit (KB)' is set to '16,384 KB or greater' Fail
+185/527: (L1) Ensure 'Windows Firewall: Public: Logging: Log dropped packets' is set to 'Yes'....... Fail
+186/527: (L1) Ensure 'Windows Firewall: Public: Logging: Log successful connections' is set to 'Yes' Fail
+187/527: (L1) Ensure 'Audit Credential Validation' is set to 'Success and Failure'.................. Fail
+188/527: (L1) Ensure 'Audit Application Group Management' is set to 'Success and Failure'........... Fail
+189/527: (L1) Ensure 'Audit Security Group Management' is set to include 'Success'.................. Pass
+190/527: (L1) Ensure 'Audit User Account Management' is set to 'Success and Failure'................ Fail
+191/527: (L1) Ensure 'Audit PNP Activity' is set to include 'Success'............................... Fail
+192/527: (L1) Ensure 'Audit Process Creation' is set to include 'Success'........................... Fail
+193/527: (L1) Ensure 'Audit Account Lockout' is set to include 'Failure'............................ Fail
+194/527: (L1) Ensure 'Audit Group Membership' is set to include 'Success'........................... Fail
+195/527: (L1) Ensure 'Audit Logoff' is set to include 'Success'..................................... Pass
+196/527: (L1) Ensure 'Audit Logon' is set to 'Success and Failure'.................................. Pass
+197/527: (L1) Ensure 'Audit Other Logon/Logoff Events' is set to 'Success and Failure'.............. Fail
+198/527: (L1) Ensure 'Audit Special Logon' is set to include 'Success'.............................. Pass
+199/527: (L1) Ensure 'Audit Detailed File Share' is set to include 'Failure'........................ Fail
+200/527: (L1) Ensure 'Audit File Share' is set to 'Success and Failure'............................. Fail
+201/527: (L1) Ensure 'Audit Other Object Access Events' is set to 'Success and Failure'............. Fail
+202/527: (L1) Ensure 'Audit Removable Storage' is set to 'Success and Failure'...................... Fail
+203/527: (L1) Ensure 'Audit Audit Policy Change' is set to include 'Success'........................ Pass
+204/527: (L1) Ensure 'Audit Authentication Policy Change' is set to include 'Success'............... Pass
+205/527: (L1) Ensure 'Audit Authorization Policy Change' is set to include 'Success'................ Fail
+206/527: (L1) Ensure 'Audit MPSSVC Rule-Level Policy Change' is set to 'Success and Failure'........ Fail
+207/527: (L1) Ensure 'Audit Other Policy Change Events' is set to include 'Failure'................. Fail
+208/527: (L1) Ensure 'Audit Sensitive Privilege Use' is set to 'Success and Failure'................ Fail
+209/527: (L1) Ensure 'Audit IPsec Driver' is set to 'Success and Failure'........................... Fail
+210/527: (L1) Ensure 'Audit Other System Events' is set to 'Success and Failure'.................... Pass
+211/527: (L1) Ensure 'Audit Security State Change' is set to include 'Success'...................... Pass
+212/527: (L1) Ensure 'Audit Security System Extension' is set to include 'Success'.................. Fail
+213/527: (L1) Ensure 'Audit System Integrity' is set to 'Success and Failure'....................... Pass
+214/527: (L1) Ensure 'Prevent enabling lock screen camera' is set to 'Enabled'...................... Fail
+215/527: (L1) Ensure 'Prevent enabling lock screen slide show' is set to 'Enabled'.................. Fail
+216/527: (L1) Ensure 'Allow users to enable online speech recognition services' is set to 'Disabled' Fail
+217/527: (L2) Ensure 'Allow Online Tips' is set to 'Disabled'....................................... Not Selected
+218/527: (L1) Ensure LAPS AdmPwd GPO Extension / CSE is installed................................... Fail
+219/527: (L1) Ensure 'Do not allow password expirat...r than required by policy' is set to 'Enabled' Fail
+220/527: (L1) Ensure 'Enable Local Admin Password Management' is set to 'Enabled'................... Fail
+221/527: (L1) Ensure 'Password Settings: Password C... small letters + numbers + special characters' Fail
+222/527: (L1) Ensure 'Password Settings: Password Length' is set to 'Enabled: 15 or more'........... Fail
+223/527: (L1) Ensure 'Password Settings: Password Age (Days)' is set to 'Enabled: 30 or fewer'...... Fail
+224/527: (L1) Ensure 'Apply UAC restrictions to loc...ccounts on network logons' is set to 'Enabled' Fail
+225/527: (L1) Ensure 'Configure RPC packet level pr... for incoming connections' is set to 'Enabled' Fail
+226/527: (L1) Ensure 'Configure SMB v1 client drive...set to 'Enabled: Disable driver (recommended)' Fail
+227/527: (L1) Ensure 'Configure SMB v1 server' is set to 'Disabled'................................. Fail
+228/527: (L1) Ensure 'Enable Structured Exception H...rwrite Protection (SEHOP)' is set to 'Enabled' Fail
+229/527: (L1) Ensure 'LSA Protection' is set to 'Enabled'........................................... Fail
+230/527: (L1) Ensure 'NetBT NodeType configuration' is set to 'Enabled: P-node (recommended)'....... Fail
+231/527: (L1) Ensure 'WDigest Authentication' is set to 'Disabled'.................................. Fail
+232/527: (L1) Ensure 'MSS: (AutoAdminLogon) Enable ... Logon (not recommended)' is set to 'Disabled' Fail
+233/527: (L1) Ensure 'MSS: (DisableIPSourceRouting ...ection, source routing is completely disabled' Fail
+234/527: (L1) Ensure 'MSS: (DisableIPSourceRouting)...ection, source routing is completely disabled' Fail
+235/527: (L2) Ensure 'MSS: (DisableSavePassword) Pr...password from being saved' is set to 'Enabled' Not Selected
+236/527: (L1) Ensure 'MSS: (EnableICMPRedirect) All...de OSPF generated routes' is set to 'Disabled' Fail
+237/527: (L2) Ensure 'MSS: (KeepAliveTime) How ofte... 'Enabled: 300,000 or 5 minutes (recommended)' Not Selected
+238/527: (L1) Ensure 'MSS: (NoNameReleaseOnDemand) ... except from WINS servers' is set to 'Enabled' Fail
+239/527: (L2) Ensure 'MSS: (PerformRouterDiscovery)...sses (could lead to DoS)' is set to 'Disabled' Not Selected
+240/527: (L1) Ensure 'MSS: (SafeDllSearchMode) Enab...search mode (recommended)' is set to 'Enabled' Fail
+241/527: (L1) Ensure 'MSS: (ScreenSaverGracePeriod)...nded)' is set to 'Enabled: 5 or fewer seconds' Fail
+242/527: (L2) Ensure 'MSS: (TcpMaxDataRetransmissio... data is retransmitted' is set to 'Enabled: 3' Not Selected
+243/527: (L2) Ensure 'MSS: (TcpMaxDataRetransmissio... data is retransmitted' is set to 'Enabled: 3' Not Selected
+244/527: (L1) Ensure 'MSS: (WarningLevel) Percentag...te a warning' is set to 'Enabled: 90% or less' Fail
+245/527: (L1) Ensure 'Configure NetBIOS settings' i...le NetBIOS name resolution on public networks' Fail
+246/527: (L1) Ensure 'Turn off multicast name resolution' is set to 'Enabled'....................... Fail
+247/527: (L2) Ensure 'Enable Font Providers' is set to 'Disabled'................................... Not Selected
+248/527: (L1) Ensure 'Enable insecure guest logons' is set to 'Disabled'............................ Fail
+249/527: (L2) Ensure 'Turn on Mapper I/O (LLTDIO) driver' is set to 'Disabled'...................... Not Selected
+250/527: (L2) Ensure 'Turn on Responder (RSPNDR) driver' is set to 'Disabled'....................... Not Selected
+251/527: (L2) Ensure 'Turn off Microsoft Peer-to-Peer Networking Services' is set to 'Enabled'...... Not Selected
+252/527: (L1) Ensure 'Prohibit installation and con...n your DNS domain network' is set to 'Enabled' Fail
+253/527: (L1) Ensure 'Prohibit use of Internet Conn...n your DNS domain network' is set to 'Enabled' Fail
+254/527: (L1) Ensure 'Require domain users to eleva...ting a network's location' is set to 'Enabled' Fail
+255/527: (L1) Ensure 'Hardened UNC Paths' is set to...grity" set for all NETLOGON and SYSVOL shares' Fail
+256/527: (L2) Disable IPv6 (Ensure TCPIP6 Parameter 'DisabledComponents' is set to '0xff (255)').... Not Selected
+257/527: (L2) Ensure 'Configuration of wireless set...sing Windows Connect Now' is set to 'Disabled' Not Selected
+258/527: (L2) Ensure 'Prohibit access of the Windows Connect Now wizards' is set to 'Enabled'....... Not Selected
+259/527: (L1) Ensure 'Minimize the number of simult... 'Enabled: 3 = Prevent Wi-Fi when on Ethernet' Fail
+260/527: (L1) Ensure 'Prohibit connection to non-do...ain authenticated network' is set to 'Enabled' Fail
+261/527: (L1) Ensure 'Allow Windows to automaticall...s offering paid services' is set to 'Disabled' Fail
+262/527: (L1) Ensure 'Allow Print Spooler to accept client connections' is set to 'Disabled'........ Fail
+263/527: (L1) Ensure 'Configure Redirection Guard' is set to 'Enabled: Redirection Guard Enabled'... Fail
+264/527: (L1) Ensure 'Configure RPC connection sett...connections' is set to 'Enabled: RPC over TCP' Fail
+265/527: (L1) Ensure 'Configure RPC connection sett... RPC connections' is set to 'Enabled: Default' Fail
+266/527: (L1) Ensure 'Configure RPC listener settin...connections' is set to 'Enabled: RPC over TCP' Fail
+267/527: (L1) Ensure 'Configure RPC listener settin...ons:' is set to 'Enabled: Negotiate' or higher Fail
+268/527: (L1) Ensure 'Configure RPC over TCP port' is set to 'Enabled: 0'........................... Fail
+269/527: (L1) Ensure 'Limits print driver installation to Administrators' is set to 'Enabled'....... Fail
+270/527: (L1) Ensure 'Manage processing of Queue-sp... Limit Queue-specific files to Color profiles' Fail
+271/527: (L1) Ensure 'Point and Print Restrictions:...o 'Enabled: Show warning and elevation prompt' Fail
+272/527: (L1) Ensure 'Point and Print Restrictions:...o 'Enabled: Show warning and elevation prompt' Fail
+273/527: (L2) Ensure 'Turn off notifications network usage' is set to 'Enabled'..................... Not Selected
+274/527: (L1) Ensure 'Include command line in process creation events' is set to 'Enabled'.......... Fail
+275/527: (L1) Ensure 'Encryption Oracle Remediation' is set to 'Enabled: Force Updated Clients'..... Fail
+276/527: (L1) Ensure 'Remote host allows delegation...on-exportable credentials' is set to 'Enabled' Fail
+277/527: (NG) Ensure 'Turn On Virtualization Based Security' is set to 'Enabled'.................... Not Selected
+278/527: (NG) Ensure 'Turn On Virtualization Based ...urity Level' is set to 'Secure Boot' or higher Not Selected
+279/527: (NG) Ensure 'Turn On Virtualization Based ... Integrity' is set to 'Enabled with UEFI lock' Not Selected
+280/527: (NG) Ensure 'Turn On Virtualization Based ...y Attributes Table' is set to 'True (checked)' Not Selected
+281/527: (NG) Ensure 'Turn On Virtualization Based ...figuration' is set to 'Enabled with UEFI lock' Not Selected
+282/527: (NG) Ensure 'Turn On Virtualization Based ...cure Launch Configuration' is set to 'Enabled' Not Selected
+283/527: (BL) Ensure 'Prevent installation of devic...h any of these device IDs' is set to 'Enabled' Not Selected
+284/527: (BL) Ensure 'Prevent installation of devic...y of these device IDs' is set to 'PCI\CC_0C0A' Not Selected
+285/527: (BL) Ensure 'Prevent installation of devic...already installed.' is set to 'True' (checked) Not Selected
+286/527: (BL) Ensure 'Prevent installation of devic...hese device setup classes' is set to 'Enabled' Not Selected
+287/527: (BL) Ensure 'Prevent installation of devic...up' is set to 'IEEE 1394 device setup classes' Not Selected
+288/527: (BL) Ensure 'Prevent installation of devic...already installed.' is set to 'True' (checked) Not Selected
+289/527: (L1) Ensure 'Prevent device metadata retrieval from the Internet' is set to 'Enabled'...... Fail
+290/527: (L1) Ensure 'Boot-Start Driver Initializat... 'Enabled: Good, unknown and bad but critical' Fail
+291/527: (L1) Ensure 'Configure registry policy pro...kground processing' is set to 'Enabled: FALSE' Fail
+292/527: (L1) Ensure 'Configure registry policy pro...ts have not changed' is set to 'Enabled: TRUE' Fail
+293/527: (L1) Ensure 'Continue experiences on this device' is set to 'Disabled'..................... Fail
+294/527: (L1) Ensure 'Turn off background refresh of Group Policy' is set to 'Disabled'............. Pass
+295/527: (L2) Ensure 'Turn off access to the Store' is set to 'Enabled'............................. Not Selected
+296/527: (L1) Ensure 'Turn off downloading of print drivers over HTTP' is set to 'Enabled'.......... Fail
+297/527: (L2) Ensure 'Turn off handwriting personalization data sharing' is set to 'Enabled'........ Not Selected
+298/527: (L2) Ensure 'Turn off handwriting recognition error reporting' is set to 'Enabled'......... Not Selected
+299/527: (L2) Ensure 'Turn off Internet Connection ...eferring to Microsoft.com' is set to 'Enabled' Not Selected
+300/527: (L1) Ensure 'Turn off Internet download fo...d online ordering wizards' is set to 'Enabled' Fail
+301/527: (L2) Ensure 'Turn off printing over HTTP' is set to 'Enabled'.............................. Not Selected
+302/527: (L2) Ensure 'Turn off Registration if URL ...eferring to Microsoft.com' is set to 'Enabled' Not Selected
+303/527: (L2) Ensure 'Turn off Search Companion content file updates' is set to 'Enabled'........... Not Selected
+304/527: (L2) Ensure 'Turn off the "Order Prints" picture task' is set to 'Enabled'................. Not Selected
+305/527: (L2) Ensure 'Turn off the "Publish to Web" task for files and folders' is set to 'Enabled'. Not Selected
+306/527: (L2) Ensure 'Turn off the Windows Messenge...ience Improvement Program' is set to 'Enabled' Not Selected
+307/527: (L2) Ensure 'Turn off Windows Customer Experience Improvement Program' is set to 'Enabled'. Not Selected
+308/527: (L2) Ensure 'Turn off Windows Error Reporting' is set to 'Enabled'......................... Not Selected
+309/527: (L2) Ensure 'Support device authentication...ng certificate' is set to 'Enabled: Automatic' Not Selected
+310/527: (BL) Ensure 'Enumeration policy for extern...DMA Protection' is set to 'Enabled: Block All' Not Selected
+311/527: (L1) Ensure 'Allow Custom SSPs and APs to be loaded into LSASS' is set to 'Disabled'....... Fail
+312/527: (NG) Ensure 'Configures LSASS to run as a ...s' is set to 'Enabled: Enabled with UEFI Lock' Not Selected
+313/527: (L2) Ensure 'Disallow copying of user inpu...ystem account for sign-in' is set to 'Enabled' Not Selected
+314/527: (L1) Ensure 'Block user from showing account details on sign-in' is set to 'Enabled'....... Fail
+315/527: (L1) Ensure 'Do not display network selection UI' is set to 'Enabled'...................... Fail
+316/527: (L1) Ensure 'Do not enumerate connected us...n domain-joined computers' is set to 'Enabled' Fail
+317/527: (L1) Ensure 'Enumerate local users on domain-joined computers' is set to 'Disabled'........ Fail
+318/527: (L1) Ensure 'Turn off app notifications on the lock screen' is set to 'Enabled'............ Fail
+319/527: (L1) Ensure 'Turn off picture password sign-in' is set to 'Enabled'........................ Fail
+320/527: (L1) Ensure 'Turn on convenience PIN sign-in' is set to 'Disabled'......................... Fail
+321/527: (L2) Ensure 'Allow Clipboard synchronization across devices' is set to 'Disabled'.......... Not Selected
+322/527: (L2) Ensure 'Allow upload of User Activities' is set to 'Disabled'......................... Not Selected
+323/527: (L1) Ensure 'Allow network connectivity du...ted-standby (on battery)' is set to 'Disabled' Fail
+324/527: (L1) Ensure 'Allow network connectivity du...ted-standby (plugged in)' is set to 'Disabled' Fail
+325/527: (BL) Ensure 'Allow standby states (S1-S3) when sleeping (on battery)' is set to 'Disabled'. Not Selected
+326/527: (BL) Ensure 'Allow standby states (S1-S3) when sleeping (plugged in)' is set to 'Disabled'. Not Selected
+327/527: (L1) Ensure 'Require a password when a computer wakes (on battery)' is set to 'Enabled'.... Fail
+328/527: (L1) Ensure 'Require a password when a computer wakes (plugged in)' is set to 'Enabled'.... Fail
+329/527: (L1) Ensure 'Configure Offer Remote Assistance' is set to 'Disabled'....................... Fail
+330/527: (L1) Ensure 'Configure Solicited Remote Assistance' is set to 'Disabled'................... Fail
+331/527: (L1) Ensure 'Enable RPC Endpoint Mapper Client Authentication' is set to 'Enabled'......... Fail
+332/527: (L1) Ensure 'Restrict Unauthenticated RPC clients' is set to 'Enabled: Authenticated'...... Fail
+333/527: (L2) Ensure 'Microsoft Support Diagnostic ...on with support provider' is set to 'Disabled' Not Selected
+334/527: (L2) Ensure 'Enable/Disable PerfTrack' is set to 'Disabled'................................ Not Selected
+335/527: (L2) Ensure 'Turn off the advertising ID' is set to 'Enabled'.............................. Not Selected
+336/527: (L2) Ensure 'Enable Windows NTP Client' is set to 'Enabled'................................ Not Selected
+337/527: (L2) Ensure 'Enable Windows NTP Server' is set to 'Disabled'............................... Not Selected
+338/527: (L2) Ensure 'Allow a Windows app to share ...ation data between users' is set to 'Disabled' Not Selected
+339/527: (L1) Ensure 'Prevent non-admin users from ...ing packaged Windows apps' is set to 'Enabled' Fail
+340/527: (L1) Ensure 'Let Windows apps activate wit...tem is locked' is set to 'Enabled: Force Deny' Fail
+341/527: (L1) Ensure 'Allow Microsoft accounts to be optional' is set to 'Enabled'.................. Fail
+342/527: (L2) Ensure 'Block launching Universal Win...cess from hosted content.' is set to 'Enabled' Not Selected
+343/527: (L1) Ensure 'Disallow Autoplay for non-volume devices' is set to 'Enabled'................. Fail
+344/527: (L1) Ensure 'Set the default behavior for ...'Enabled: Do not execute any autorun commands' Fail
+345/527: (L1) Ensure 'Turn off Autoplay' is set to 'Enabled: All drives'............................ Fail
+346/527: (L1) Ensure 'Configure enhanced anti-spoofing' is set to 'Enabled'......................... Fail
+347/527: (BL) Ensure 'Allow access to BitLocker-pro...lier versions of Windows' is set to 'Disabled' Not Selected
+348/527: (BL) Ensure 'Choose how BitLocker-protecte...d drives can be recovered' is set to 'Enabled' Not Selected
+349/527: (BL) Ensure 'Choose how BitLocker-protecte...data recovery agent' is set to 'Enabled: True' Not Selected
+350/527: (BL) Ensure 'Choose how BitLocker-protecte...to 'Enabled: Allow 48-digit recovery password' Not Selected
+351/527: (BL) Ensure 'Choose how BitLocker-protecte...s set to 'Enabled: Allow 256-bit recovery key' Not Selected
+352/527: (BL) Ensure 'Choose how BitLocker-protecte...Locker setup wizard' is set to 'Enabled: True' Not Selected
+353/527: (BL) Ensure 'Choose how BitLocker-protecte... fixed data drives' is set to 'Enabled: False' Not Selected
+354/527: (BL) Ensure 'Choose how BitLocker-protecte...d: Backup recovery passwords and key packages' Not Selected
+355/527: (BL) Ensure 'Choose how BitLocker-protecte... fixed data drives' is set to 'Enabled: False' Not Selected
+356/527: (BL) Ensure 'Configure use of hardware-bas...on for fixed data drives' is set to 'Disabled' Not Selected
+357/527: (BL) Ensure 'Configure use of passwords for fixed data drives' is set to 'Disabled'........ Not Selected
+358/527: (BL) Ensure 'Configure use of smart cards on fixed data drives' is set to 'Enabled'........ Not Selected
+359/527: (BL) Ensure 'Configure use of smart cards ...n fixed data drives' is set to 'Enabled: True' Not Selected
+360/527: (BL) Ensure 'Allow enhanced PINs for startup' is set to 'Enabled'.......................... Not Selected
+361/527: (BL) Ensure 'Allow Secure Boot for integrity validation' is set to 'Enabled'............... Not Selected
+362/527: (BL) Ensure 'Choose how BitLocker-protecte...m drives can be recovered' is set to 'Enabled' Not Selected
+363/527: (BL) Ensure 'Choose how BitLocker-protecte...ata recovery agent' is set to 'Enabled: False' Not Selected
+364/527: (BL) Ensure 'Choose how BitLocker-protecte... 'Enabled: Require 48-digit recovery password' Not Selected
+365/527: (BL) Ensure 'Choose how BitLocker-protecte...o 'Enabled: Do not allow 256-bit recovery key' Not Selected
+366/527: (BL) Ensure 'Choose how BitLocker-protecte...Locker setup wizard' is set to 'Enabled: True' Not Selected
+367/527: (BL) Ensure 'Choose how BitLocker-protecte...ating system drives' is set to 'Enabled: True' Not Selected
+368/527: (BL) Ensure 'Choose how BitLocker-protecte...ed: Store recovery passwords and key packages' Not Selected
+369/527: (BL) Ensure 'Choose how BitLocker-protecte...ating system drives' is set to 'Enabled: True' Not Selected
+370/527: (BL) Ensure 'Configure use of hardware-bas... operating system drives' is set to 'Disabled' Not Selected
+371/527: (BL) Ensure 'Configure use of passwords for operating system drives' is set to 'Disabled'.. Not Selected
+372/527: (BL) Ensure 'Require additional authentication at startup' is set to 'Enabled'............. Not Selected
+373/527: (BL) Ensure 'Require additional authentica...t a compatible TPM' is set to 'Enabled: False' Not Selected
+374/527: (BL) Ensure 'Allow access to BitLocker-pro...lier versions of Windows' is set to 'Disabled' Not Selected
+375/527: (BL) Ensure 'Choose how BitLocker-protecte...e drives can be recovered' is set to 'Enabled' Not Selected
+376/527: (BL) Ensure 'Choose how BitLocker-protecte...data recovery agent' is set to 'Enabled: True' Not Selected
+377/527: (BL) Ensure 'Choose how BitLocker-protecte...bled: Do not allow 48-digit recovery password' Not Selected
+378/527: (BL) Ensure 'Choose how BitLocker-protecte...o 'Enabled: Do not allow 256-bit recovery key' Not Selected
+379/527: (BL) Ensure 'Choose how BitLocker-protecte...Locker setup wizard' is set to 'Enabled: True' Not Selected
+380/527: (BL) Ensure 'Choose how BitLocker-protecte...ovable data drives' is set to 'Enabled: False' Not Selected
+381/527: (BL) Ensure 'Choose how BitLocker-protecte...d: Backup recovery passwords and key packages' Not Selected
+382/527: (BL) Ensure 'Choose how BitLocker-protecte...ovable data drives' is set to 'Enabled: False' Not Selected
+383/527: (BL) Ensure 'Configure use of hardware-bas...or removable data drives' is set to 'Disabled' Not Selected
+384/527: (BL) Ensure 'Configure use of passwords for removable data drives' is set to 'Disabled'.... Not Selected
+385/527: (BL) Ensure 'Configure use of smart cards on removable data drives' is set to 'Enabled'.... Not Selected
+386/527: (BL) Ensure 'Configure use of smart cards ...movable data drives' is set to 'Enabled: True' Not Selected
+387/527: (BL) Ensure 'Deny write access to removabl...ot protected by BitLocker' is set to 'Enabled' Not Selected
+388/527: (BL) Ensure 'Deny write access to removabl...other organization' is set to 'Enabled: False' Not Selected
+389/527: (BL) Ensure 'Disable new DMA devices when this computer is locked' is set to 'Enabled'..... Not Selected
+390/527: (L2) Ensure 'Allow Use of Camera' is set to 'Disabled'..................................... Not Selected
+391/527: (L1) Ensure 'Turn off cloud consumer account state content' is set to 'Enabled'............ Fail
+392/527: (L2) Ensure 'Turn off cloud optimized content' is set to 'Enabled'......................... Not Selected
+393/527: (L1) Ensure 'Turn off Microsoft consumer experiences' is set to 'Enabled'.................. Fail
+394/527: (L1) Ensure 'Require pin for pairing' is set to 'Enabled: First Time' OR 'Enabled: Always'. Fail
+395/527: (L1) Ensure 'Do not display the password reveal button' is set to 'Enabled'................ Fail
+396/527: (L1) Ensure 'Enumerate administrator accounts on elevation' is set to 'Disabled'........... Fail
+397/527: (L1) Ensure 'Prevent the use of security questions for local accounts' is set to 'Enabled'. Fail
+398/527: (L1) Ensure 'Allow Diagnostic Data' is set...)' or 'Enabled: Send required diagnostic data' Fail
+399/527: (L2) Ensure 'Configure Authenticated Proxy...o 'Enabled: Disable Authenticated Proxy usage' Not Selected
+400/527: (L1) Ensure 'Disable OneSettings Downloads' is set to 'Enabled'............................ Fail
+401/527: (L1) Ensure 'Do not show feedback notifications' is set to 'Enabled'....................... Fail
+402/527: (L1) Ensure 'Enable OneSettings Auditing' is set to 'Enabled'.............................. Fail
+403/527: (L1) Ensure 'Limit Diagnostic Log Collection' is set to 'Enabled'.......................... Fail
+404/527: (L1) Ensure 'Limit Dump Collection' is set to 'Enabled'.................................... Fail
+405/527: (L1) Ensure 'Toggle user control over Insider builds' is set to 'Disabled'................. Fail
+406/527: (L1) Ensure 'Download Mode' is NOT set to 'Enabled: Internet'.............................. Fail
+407/527: (L1) Ensure 'Enable App Installer' is set to 'Disabled'.................................... Fail
+408/527: (L1) Ensure 'Enable App Installer Experimental Features' is set to 'Disabled'.............. Fail
+409/527: (L1) Ensure 'Enable App Installer Hash Override' is set to 'Disabled'...................... Fail
+410/527: (L1) Ensure 'Enable App Installer ms-appinstaller protocol' is set to 'Disabled'........... Fail
+411/527: (L1) Ensure 'Application: Control Event Lo...reaches its maximum size' is set to 'Disabled' Fail
+412/527: (L1) Ensure 'Application: Specify the maxi...e (KB)' is set to 'Enabled: 32,768 or greater' Fail
+413/527: (L1) Ensure 'Security: Control Event Log b...reaches its maximum size' is set to 'Disabled' Fail
+414/527: (L1) Ensure 'Security: Specify the maximum... (KB)' is set to 'Enabled: 196,608 or greater' Fail
+415/527: (L1) Ensure 'Setup: Control Event Log beha...reaches its maximum size' is set to 'Disabled' Fail
+416/527: (L1) Ensure 'Setup: Specify the maximum lo...e (KB)' is set to 'Enabled: 32,768 or greater' Fail
+417/527: (L1) Ensure 'System: Control Event Log beh...reaches its maximum size' is set to 'Disabled' Fail
+418/527: (L1) Ensure 'System: Specify the maximum l...e (KB)' is set to 'Enabled: 32,768 or greater' Fail
+419/527: (L1) Ensure 'Turn off Data Execution Prevention for Explorer' is set to 'Disabled'......... Fail
+420/527: (L1) Ensure 'Turn off heap termination on corruption' is set to 'Disabled'................. Fail
+421/527: (L1) Ensure 'Turn off shell protocol protected mode' is set to 'Disabled'.................. Fail
+422/527: (L1) Ensure 'Prevent the computer from joining a homegroup' is set to 'Enabled'............ Fail
+423/527: (L1) 'Disable Internet Explorer 11 as a standalone browser' is set to 'Enabled: Always'.... Fail
+424/527: (L2) Ensure 'Turn off location' is set to 'Enabled'........................................ Not Selected
+425/527: (L2) Ensure 'Allow Message Service Cloud Sync' is set to 'Disabled'........................ Not Selected
+426/527: (L1) Ensure 'Block all consumer Microsoft account user authentication' is set to 'Enabled'. Fail
+427/527: (L1) Ensure 'Configure local setting overr...orting to Microsoft MAPS' is set to 'Disabled' Fail
+428/527: (L2) Ensure 'Join Microsoft MAPS' is set to 'Disabled'..................................... Not Selected
+429/527: (L1) Ensure 'Configure Attack Surface Reduction rules' is set to 'Enabled'................. Fail
+430/527: (L1) Ensure 'Configure Attack Surface Redu...Set the state for each ASR rule' is configured Fail
+431/527: (L1) Ensure 'Prevent users and apps from a...dangerous websites' is set to 'Enabled: Block' Fail
+432/527: (L2) Ensure 'Enable file hash computation feature' is set to 'Enabled'..................... Not Selected
+433/527: (L1) Ensure 'Scan all downloaded files and attachments' is set to 'Enabled'................ Fail
+434/527: (L1) Ensure 'Turn off real-time protection' is set to 'Disabled'........................... Fail
+435/527: (L1) Ensure 'Turn on behavior monitoring' is set to 'Enabled'.............................. Fail
+436/527: (L1) Ensure 'Turn on script scanning' is set to 'Enabled'.................................. Fail
+437/527: (L2) Ensure 'Configure Watson events' is set to 'Disabled'................................. Not Selected
+438/527: (L1) Ensure 'Scan removable drives' is set to 'Enabled'.................................... Fail
+439/527: (L1) Ensure 'Turn on e-mail scanning' is set to 'Enabled'.................................. Fail
+440/527: (L1) Ensure 'Configure detection for poten...anted applications' is set to 'Enabled: Block' Fail
+441/527: (L1) Ensure 'Turn off Microsoft Defender AntiVirus' is set to 'Disabled'................... Fail
+442/527: (NG) Ensure 'Allow auditing events in Micr...efender Application Guard' is set to 'Enabled' Not Selected
+443/527: (NG) Ensure 'Allow camera and microphone a...fender Application Guard' is set to 'Disabled' Not Selected
+444/527: (NG) Ensure 'Allow data persistence for Mi...fender Application Guard' is set to 'Disabled' Not Selected
+445/527: (NG) Ensure 'Allow files to download and s...fender Application Guard' is set to 'Disabled' Not Selected
+446/527: (NG) Ensure 'Configure Microsoft Defender ...peration from an isolated session to the host' Not Selected
+447/527: (NG) Ensure 'Turn on Microsoft Defender Ap... Guard in Managed Mode' is set to 'Enabled: 1' Not Selected
+448/527: (L2) Ensure 'Enable news and interests on the taskbar' is set to 'Disabled'................ Not Selected
+449/527: (L1) Ensure 'Prevent the usage of OneDrive for file storage' is set to 'Enabled'........... Fail
+450/527: (L2) Ensure 'Turn off Push To Install service' is set to 'Enabled'......................... Not Selected
+451/527: (L1) Ensure 'Do not allow passwords to be saved' is set to 'Enabled'....................... Fail
+452/527: (L2) Ensure 'Allow users to connect remote... Remote Desktop Services' is set to 'Disabled' Not Selected
+453/527: (L2) Ensure 'Allow UI Automation redirection' is set to 'Disabled'......................... Not Selected
+454/527: (L2) Ensure 'Do not allow COM port redirection' is set to 'Enabled'........................ Not Selected
+455/527: (L1) Ensure 'Do not allow drive redirection' is set to 'Enabled'........................... Fail
+456/527: (L2) Ensure 'Do not allow location redirection' is set to 'Enabled'........................ Not Selected
+457/527: (L2) Ensure 'Do not allow LPT port redirection' is set to 'Enabled'........................ Not Selected
+458/527: (L2) Ensure 'Do not allow supported Plug and Play device redirection' is set to 'Enabled'.. Not Selected
+459/527: (L2) Ensure 'Do not allow WebAuthn redirection' is set to 'Enabled'........................ Not Selected
+460/527: (L1) Ensure 'Always prompt for password upon connection' is set to 'Enabled'............... Fail
+461/527: (L1) Ensure 'Require secure RPC communication' is set to 'Enabled'......................... Fail
+462/527: (L1) Ensure 'Require use of specific secur...te (RDP) connections' is set to 'Enabled: SSL' Fail
+463/527: (L1) Ensure 'Require user authentication f...work Level Authentication' is set to 'Enabled' Fail
+464/527: (L1) Ensure 'Set client connection encryption level' is set to 'Enabled: High Level'....... Fail
+465/527: (L2) Ensure 'Set time limit for active but...nabled: 15 minutes or less, but not Never (0)' Not Selected
+466/527: (L2) Ensure 'Set time limit for disconnected sessions' is set to 'Enabled: 1 minute'....... Not Selected
+467/527: (L1) Ensure 'Do not delete temp folders upon exit' is set to 'Disabled'.................... Fail
+468/527: (L1) Ensure 'Prevent downloading of enclosures' is set to 'Enabled'........................ Fail
+469/527: (L2) Ensure 'Allow Cloud Search' is set to 'Enabled: Disable Cloud Search'................. Not Selected
+470/527: (L1) Ensure 'Allow Cortana' is set to 'Disabled'........................................... Fail
+471/527: (L1) Ensure 'Allow Cortana above lock screen' is set to 'Disabled'......................... Fail
+472/527: (L1) Ensure 'Allow indexing of encrypted files' is set to 'Disabled'....................... Fail
+473/527: (L1) Ensure 'Allow search and Cortana to use location' is set to 'Disabled'................ Fail
+474/527: (L2) Ensure 'Allow search highlights' is set to 'Disabled'................................. Not Selected
+475/527: (L2) Ensure 'Turn off KMS Client Online AVS Validation' is set to 'Enabled'................ Not Selected
+476/527: (L2) Ensure 'Disable all apps from Microsoft Store' is set to 'Disabled'................... Not Selected
+477/527: (L1) Ensure 'Only display the private store within the Microsoft Store' is set to 'Enabled' Fail
+478/527: (L1) Ensure 'Turn off Automatic Download and Install of updates' is set to 'Disabled'...... Fail
+479/527: (L1) Ensure 'Turn off the offer to update ...latest version of Windows' is set to 'Enabled' Fail
+480/527: (L2) Ensure 'Turn off the Store application' is set to 'Enabled'........................... Not Selected
+481/527: (L1) Ensure 'Allow widgets' is set to 'Disabled'........................................... Fail
+482/527: (L1) Ensure 'Configure Windows Defender Sm...' is set to 'Enabled: Warn and prevent bypass' Fail
+483/527: (L1) Ensure 'Configure Windows Defender SmartScreen' is set to 'Enabled'................... Fail
+484/527: (L1) Ensure 'Prevent bypassing Windows Def...tScreen prompts for sites' is set to 'Enabled' Fail
+485/527: (L1) Ensure 'Enables or disables Windows G...cording and Broadcasting' is set to 'Disabled' Fail
+486/527: (L2) Ensure 'Allow suggested apps in Windows Ink Workspace' is set to 'Disabled'........... Not Selected
+487/527: (L1) Ensure 'Allow Windows Ink Workspace' ...llow access above lock' OR 'Enabled: Disabled' Fail
+488/527: (L1) Ensure 'Allow user control over installs' is set to 'Disabled'........................ Fail
+489/527: (L1) Ensure 'Always install with elevated privileges' is set to 'Disabled'................. Fail
+490/527: (L2) Ensure 'Prevent Internet Explorer sec...indows Installer scripts' is set to 'Disabled' Not Selected
+491/527: (L1) Ensure 'Enable MPR notifications for the system' is set to 'Disabled'................. Fail
+492/527: (L1) Ensure 'Sign-in and lock last interac...atically after a restart' is set to 'Disabled' Fail
+493/527: (L1) Ensure 'Turn on PowerShell Script Block Logging' is set to 'Enabled'.................. Fail
+494/527: (L1) Ensure 'Turn on PowerShell Transcription' is set to 'Enabled'......................... Fail
+495/527: (L1) Ensure 'Allow Basic authentication' is set to 'Disabled'.............................. Fail
+496/527: (L1) Ensure 'Allow unencrypted traffic' is set to 'Disabled'............................... Fail
+497/527: (L1) Ensure 'Disallow Digest authentication' is set to 'Enabled'........................... Fail
+498/527: (L1) Ensure 'Allow Basic authentication' is set to 'Disabled'.............................. Fail
+499/527: (L2) Ensure 'Allow remote server management through WinRM' is set to 'Disabled'............ Not Selected
+500/527: (L1) Ensure 'Allow unencrypted traffic' is set to 'Disabled'............................... Fail
+501/527: (L1) Ensure 'Disallow WinRM from storing RunAs credentials' is set to 'Enabled'............ Fail
+502/527: (L2) Ensure 'Allow Remote Shell Access' is set to 'Disabled'............................... Not Selected
+503/527: (L1) Ensure 'Allow clipboard sharing with Windows Sandbox' is set to 'Disabled'............ Fail
+504/527: (L1) Ensure 'Allow networking in Windows Sandbox' is set to 'Disabled'..................... Fail
+505/527: (L1) Ensure 'Prevent users from modifying settings' is set to 'Enabled'.................... Fail
+506/527: (L1) Ensure 'No auto-restart with logged o...ic updates installations' is set to 'Disabled' Fail
+507/527: (L1) Ensure 'Configure Automatic Updates' is set to 'Enabled'.............................. Fail
+508/527: (L1) Ensure 'Configure Automatic Updates: Scheduled install day' is set to '0 - Every day'. Fail
+509/527: (L1) Ensure 'Remove access to “Pause updates” feature' is set to 'Enabled'................. Fail
+510/527: (L1) Ensure 'Manage preview builds' is set to 'Disabled'................................... Fail
+511/527: (L1) Ensure 'Select when Preview Builds an...eceived' is set to 'Enabled: 180 or more days' Fail
+512/527: (L1) Ensure 'Select when Quality Updates are received' is set to 'Enabled: 0 days'......... Fail
+513/527: (L1) Ensure 'Enable screen saver' is set to 'Enabled'...................................... Fail
+514/527: (L1) Ensure 'Password protect the screen saver' is set to 'Enabled'........................ Fail
+515/527: (L1) Ensure 'Screen saver timeout' is set to 'Enabled: 900 seconds or fewer, but not 0'.... Fail
+516/527: (L1) Ensure 'Turn off toast notifications on the lock screen' is set to 'Enabled'.......... Fail
+517/527: (L2) Ensure 'Turn off Help Experience Improvement Program' is set to 'Enabled'............. Not Selected
+518/527: (L1) Ensure 'Do not preserve zone information in file attachments' is set to 'Disabled'.... Fail
+519/527: (L1) Ensure 'Notify antivirus programs when opening attachments' is set to 'Enabled'....... Fail
+520/527: (L1) Ensure 'Configure Windows spotlight on lock screen' is set to Disabled'............... Fail
+521/527: (L1) Ensure 'Do not suggest third-party content in Windows spotlight' is set to 'Enabled'.. Fail
+522/527: (L2) Ensure 'Do not use diagnostic data for tailored experiences' is set to 'Enabled'...... Not Selected
+523/527: (L2) Ensure 'Turn off all Windows spotlight features' is set to 'Enabled'.................. Not Selected
+524/527: (L1) Ensure 'Turn off Spotlight collection on Desktop' is set to 'Enabled'................. Fail
+525/527: (L1) Ensure 'Prevent users from sharing files within their profile.' is set to 'Enabled'... Fail
+526/527: (L1) Ensure 'Always install with elevated privileges' is set to 'Disabled'................. Fail
+527/527: (L2) Ensure 'Prevent Codec Download' is set to 'Enabled'................................... Not Selected
+
+-----------------------------------------------------------------------------
+ ***** Assessment Results Summary *****
+-----------------------------------------------------------------------------
+   Total # of Results: 527
+ Total Scored Results: 361
+           Total Pass: 83
+           Total Fail: 278
+          Total Error: 0
+        Total Unknown: 0
+ Total Not Applicable: 0
+    Total Not Checked: 2
+   Total Not Selected: 164
+  Total Informational: 0
+-----------------------------------------------------------------------------
+ ***** Assessment Scoring *****
+-----------------------------------------------------------------------------
+         Score Earned: 83.0
+    Maximum Available: 361.0
+                Total: 22.99%
+-----------------------------------------------------------------------------
+
+- Generating Checklist Results...
+
+Ending Assessment - Date & Time: 08-07-2023 22:14:05
+Total Assessment Time: 2 minutes
+- Generating Asset Reporting Format.
+  - Generating Report Request.
+- Generating Data-Stream Collection.
+- Data-Stream Collection Generated.
+  - Collecting Checklist Results.
+  - Combining Results.
+  - Saving Results.
+- Asset Reporting Format Generated.
+
+ ***** Writing Assessment Results ***** 
+ - Reports saving to C:\Users\Usuario\Desktop
+ -- GEndrek-CIS_Microsoft_Windows_10_Enterprise_Benchmark-20230807T221405Z.html
+Assessment Complete for Checklist: CIS Microsoft Windows 10 Enterprise Benchmark
+-----------------------------------------------------------
+Finished Assessment 1/2
+Disconnecting Session...
+Obtaining session connection --> Local
+Connection established.  
+Started Assessment 2/2
+Assessment target number 2
+Assessment Type is: LOCAL
+Assessment Target System is: basic-GENDREK
+Assessment File CIS_Controls_Assessment_Module_Windows_10_v1.0.3-xccdf.xml has a valid Signature.
+Selected Checklist 'CIS Controls Assessment Module - Implementation Group 1 for Windows 10'
+Selected Profile 'Implementation Group 1 for Windows 10 (Partial) - Automated Sub-Controls Only'
+Starting Assessment
+----------------------- ASSESSMENT TARGET -----------------------------------
+       Hostname: GEndrek
+        OS Name: Microsoft Windows 10 Pro
+     OS Version: 10.0.19045
+OS Architecture: 64 bits
+
+Interfaces:
+  Name: Realtek PCIe GbE Family Controller
+    IP: 192.168.100.4
+   MAC: 70:85:C2:C2:BA:15
+  Name: VirtualBox Host-Only Ethernet Adapter
+    IP: 192.168.56.1
+   MAC: 0A:00:27:00:00:07
+-----------------------------------------------------------------------------
+
+Starting Assessment - Date & Time: 08-07-2023 22:14:33
+-----------------------------------------------------------------------------
+ Checklist Title: CIS Controls Assessment Module - Implementation Group 1 for Windows 10
+    Checklist ID: xccdf_org.cisecurity.benchmarks_benchmark_CIS_controls_assessment_module_Windows_10_v_1.0.3
+   Profile Title: Implementation Group 1 for Windows 10 (Partial) - Automated Sub-Controls Only
+      Profile ID: xccdf_org.cisecurity.benchmarks_profile_controls_assessment_module_implementation_group_1_for_Windows_automated
+
+Assessing Platform Applicability
+- Resolving Values.................................................................................. <1 second: Done
+- Collecting 0 System Characteristics
+- Evaluating Definitions
+
+
+- Will collect 14 SCE Components
+
+Starting assessment of OVAL Definitions:
+- Resolving Values.................................................................................. <1 second: Done
+
+- Collecting 0 System Characteristics
+
+- System Characteristics Collection: <1 second
+
+- Evaluating Definitions
+- Generating OVAL Results
+- Resolving Values.................................................................................. <1 second: Done
+
+- Collecting 0 System Characteristics
+
+- System Characteristics Collection: <1 second
+
+- Evaluating Definitions
+- Generating OVAL Results
+OVAL Definitions assessment complete.
+
+Starting assessment of SCE Components:
+
+- Collecting 14 SCE Components
+- sce/cam/windows_10/3_4.ps1........................................................................ <1 second: fail
+- sce/cam/windows_10/4_2.ps1........................................................................ <1 second: fail
+- sce/cam/windows_10/6_2.ps1........................................................................ <1 second: fail
+- sce/cam/windows_10/8_2.ps1........................................................................ <1 second: pass
+- sce/cam/windows_10/8_5_a_autorun.ps1.............................................................. <1 second: fail
+- sce/cam/windows_10/8_5_b_autoplay.ps1............................................................. <1 second: fail
+- sce/cam/windows_10/9_4.ps1........................................................................ 2 seconds: pass
+- sce/cam/windows_10/10_1.ps1....................................................................... <1 second: fail
+- sce/cam/windows_10/10_2.ps1....................................................................... <1 second: fail
+- sce/cam/windows_10/10_4.ps1....................................................................... <1 second: fail
+- sce/cam/windows_10/13_6.ps1....................................................................... <1 second: fail
+- sce/cam/windows_10/15_7.ps1....................................................................... <1 second: pass
+- sce/cam/windows_10/16_9.ps1....................................................................... 1 second: pass
+- sce/cam/windows_10/16_11.ps1...................................................................... <1 second: fail
+SCE assessment complete.
+
+- Evaluating Checklist Rules
+01/44: 3.4 Deploy Automated Operating System Patch Management Tools................................. Fail
+02/44: 4.2 Change Default Passwords................................................................. Fail
+03/44: 6.2 Activate Audit Logging................................................................... Fail
+04/44: 8.2 Ensure Anti-Malware Software and Signatures are Updated.................................. Pass
+05/44: 8.5(a) Configure Devices to Not Auto-Run Content (AutoRun)................................... Fail
+06/44: 8.5(b) Configure Devices to Not Auto-Run Content (AutoPlay).................................. Fail
+07/44: 9.4 Apply Host-Based Firewalls or Port Filtering............................................. Pass
+08/44: 10.1 Ensure Regular Automated Backups........................................................ Fail
+09/44: 10.2 Perform Complete System Backups......................................................... Fail
+10/44: 10.4 Protect Backups......................................................................... Fail
+11/44: 13.6 Encrypt Mobile Device Data.............................................................. Fail
+12/44: 15.7 Leverage the Advanced Encryption Standard (AES) to Encrypt Wireless Data................ Pass
+13/44: 16.9 Disable Dormant Accounts................................................................ Pass
+14/44: 16.11 Lock Workstation Sessions After Inactivity............................................. Fail
+15/44: 1.4 Maintain Detailed Asset Inventory........................................................ Not Selected
+16/44: 1.6 Address Unauthorized Assets.............................................................. Not Selected
+17/44: 2.1 Maintain Inventory of Authorized Software................................................ Not Selected
+18/44: 2.2 Ensure Software is Supported by Vendor................................................... Not Selected
+19/44: 2.6 Address Unapproved Software.............................................................. Not Selected
+20/44: 3.5 Deploy Automated Software Patch Management Tools......................................... Not Selected
+21/44: 4.3 Ensure the Use of Dedicated Administrative Accounts...................................... Not Selected
+22/44: 5.1 Establish Secure Configurations.......................................................... Not Selected
+23/44: 7.1 Ensure Use of Only Fully Supported Browsers and Email Clients............................ Not Selected
+24/44: 7.7 Use of DNS Filtering Services............................................................ Not Selected
+25/44: 8.4 Configure Anti-Malware Scanning of Removable Media....................................... Not Selected
+26/44: 10.5 Ensure All Backups Have at Least One Offline Backup Destination......................... Not Selected
+27/44: 11.4 Install the Latest Stable Version of Any Security-Related Updates on All Network Devices Not Selected
+28/44: 12.1 Maintain an Inventory of Network Boundaries............................................. Not Selected
+29/44: 12.4 Deny Communication Over Unauthorized Ports.............................................. Not Selected
+30/44: 13.1 Maintain an Inventory of Sensitive Information.......................................... Not Selected
+31/44: 13.2 Remove Sensitive Data or Systems Not Regularly Accessed by Organization................. Not Selected
+32/44: 14.6 Protect Information Through Access Control Lists........................................ Not Selected
+33/44: 15.10 Create Separate Wireless Network for Personal and Untrusted Devices.................... Not Selected
+34/44: 16.8 Disable Any Unassociated Accounts....................................................... Not Selected
+35/44: 17.3 Implement a Security Awareness Program.................................................. Not Selected
+36/44: 17.5 Train Workforce on Secure Authentication................................................ Not Selected
+37/44: 17.6 Train Workforce on Identifying Social Engineering Attacks............................... Not Selected
+38/44: 17.7 Train Workforce on Sensitive Data Handling.............................................. Not Selected
+39/44: 17.8 Train Workforce on Causes of Unintentional Data Exposure................................ Not Selected
+40/44: 17.9 Train Workforce Members on Identifying and Reporting Incidents.......................... Not Selected
+41/44: 19.1 Document Incident Response Procedures................................................... Not Selected
+42/44: 19.3 Designate Management Personnel to Support Incident Handling............................. Not Selected
+43/44: 19.5 Maintain Contact Information for Reporting Security Incidents........................... Not Selected
+44/44: 19.6 Publish Information Regarding Reporting Computer Anomalies and Incidents................ Not Selected
+
+-----------------------------------------------------------------------------
+ ***** Assessment Results Summary *****
+-----------------------------------------------------------------------------
+   Total # of Results: 44
+ Total Scored Results: 14
+           Total Pass: 4
+           Total Fail: 10
+          Total Error: 0
+        Total Unknown: 0
+ Total Not Applicable: 0
+    Total Not Checked: 0
+   Total Not Selected: 30
+  Total Informational: 0
+-----------------------------------------------------------------------------
+ ***** Assessment Scoring *****
+-----------------------------------------------------------------------------
+         Score Earned: 4.0
+    Maximum Available: 13.0
+                Total: 30.77%
+-----------------------------------------------------------------------------
+
+- Generating Checklist Results...
+
+Ending Assessment - Date & Time: 08-07-2023 22:14:45
+Total Assessment Time: 11 seconds
+- Generating Asset Reporting Format.
+  - Generating Report Request.
+- Generating Data-Stream Collection.
+- Data-Stream Collection Generated.
+  - Collecting Checklist Results.
+  - Combining Results.
+  - Saving Results.
+- Asset Reporting Format Generated.
+
+ ***** Writing Assessment Results ***** 
+ - Reports saving to C:\Users\Usuario\Desktop
+ -- GEndrek-CIS_Controls_Assessment_Module_-_Implementation_Group_1_for_Windows_10-20230807T221445Z.html
+Assessment Complete for Checklist: CIS Controls Assessment Module - Implementation Group 1 for Windows 10
+-----------------------------------------------------------
+Finished Assessment 2/2
+Disconnecting Session...
+Exiting; Exit Code: 0
